@@ -57,82 +57,196 @@
     </header>
 
     <main class="container">
-      <section class="prebooking">
-        <ul class="prebooking__list">
-          <li class="prebooking__item">Flights
-            <form class="flights__form" action="">
-              <ul class="flights__formlist">
-                <li class="flights__item">
-                  <p class="flights__item--title">Flying from:</p>
-                  <select class="flights__item--input" name="" id="">
-                    <option value="">Минск</option>
-                    <option value="">Москва</option>
-                    <option value="">Киев</option>
-                    <option value="">Вильнюс</option>
-                    <option value="">Варшава</option>
-                  </select>
-                </li>
-                <li class="flights__item">
-                  <p class="flights__item--title">To:</p>
-                  <select class="flights__item--input" name="" id="">
-                    <option value="">Минск</option>
-                    <option value="">Москва</option>
-                    <option value="">Киев</option>
-                    <option value="">Вильнюс</option>
-                    <option value="">Варшава</option>
-                  </select>
-                </li>
-                <li class="flights__item">
-                  <p class="flights__item--title">Check-in</p>
-                  <input class="date" type="date" name="check-in">
-                </li>
-                <li class="flights__item">
-                  <p class="flights__item--title">Check-out</p>
-                  <input type="date" name="check-out">
-                </li>
-                <li class="flights__item">
-                  <p class="flights__item--title">Adult:</p>
-                  <select class="flights__item--input" name="" id="">
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">6</option>
-                    <option value="">7</option>
-                    <option value="">8</option>
-                    <option value="">9</option>
-                    <option value="">10</option>
-                    <option value="">11</option>
-                    <option value="">12</option>
-                  </select>
-                </li>
-                <li class="flights__item">
-                  <p class="flights__item--title">Child (0-12):</p>
-                  <select class="flights__item--input" name="" id="">
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">6</option>
-                    <option value="">7</option>
-                    <option value="">8</option>
-                    <option value="">9</option>
-                    <option value="">10</option>
-                    <option value="">11</option>
-                    <option value="">12</option>
-                  </select>
-                </li>
-                <li>
-                  <input type="submit" value="Search here">
-                </li>
-                
-              </ul>
-            </form>
-          </li>
-        </ul>
+      <section class="intro">
+        <div class="intro__wrapper">
 
+          <ul class="prebooking__list">
+            <li class="prebooking__item">Flights
+              <ul class="flights__formlist">
+                <form class="flights__form" action="">
+                  <li class="flights__item">
+                    <p class="flights__item--title">Flying from:</p>
+                    <select class="flights__item--input" name="" id="">
+                      <option value="">Минск</option>
+                      <option value="">Москва</option>
+                      <option value="">Киев</option>
+                      <option value="">Вильнюс</option>
+                      <option value="">Варшава</option>
+                    </select>
+                  </li>
+                  <li class="flights__item">
+                    <p class="flights__item--title">To:</p>
+                    <select class="flights__item--input" name="" id="">
+                      <option value="">Минск</option>
+                      <option value="">Москва</option>
+                      <option value="">Киев</option>
+                      <option value="">Вильнюс</option>
+                      <option value="">Варшава</option>
+                    </select>
+                  </li>
+                  <li class="flights__item">
+                    <p class="flights__item--title">Check-in</p>
+                    <input class="date" type="date" name="check-in">
+                  </li>
+                  <li class="flights__item">
+                    <p class="flights__item--title">Check-out</p>
+                    <input type="date" name="check-out">
+                  </li>
+                  <li class="flights__item">
+                    <p class="flights__item--title">Adult:</p>
+                    <select class="flights__item--input" name="" id="">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                      <option value="">5</option>
+                      <option value="">6</option>
+                      <option value="">7</option>
+                      <option value="">8</option>
+                      <option value="">9</option>
+                      <option value="">10</option>
+                      <option value="">11</option>
+                      <option value="">12</option>
+                    </select>
+                  </li>
+                  <li class="flights__item">
+                    <p class="flights__item--title">Child (0-12):</p>
+                    <select class="flights__item--input" name="" id="">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                      <option value="">5</option>
+                      <option value="">6</option>
+                      <option value="">7</option>
+                      <option value="">8</option>
+                      <option value="">9</option>
+                      <option value="">10</option>
+                      <option value="">11</option>
+                      <option value="">12</option>
+                    </select>
+                  </li>
+                  <li>
+                    <input type="submit" value="Search here">
+                  </li>
+                </form>
+              </ul>
+            </li>
+            <li class="prebooking__item">Hotels</li>
+            <li class="prebooking__item">Cars</li>
+            <li class="prebooking__item">Cruises</li>
+          </ul>
+  
+          <div class="slogan">
+            <h2 class="slogan__title">WHY WE ARE THE BEST</h2>
+            <p class="slogan__line"><span></span></p>
+            <p class="slogan__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+          </div>
+  
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <div class="benefits__item--wrapper">
+                <h2 class="benefits__item--title">Amazing Travel</h2>
+                <p class="benefits__item--image">
+                  <img class="image__airplane" src="img/why1.png" alt="самолет">
+                </p>
+                <p class="benefits__item--text">Nam liber tempor cum soluta nobis 
+                  eleifend option congue nihil imperdiet doming id quod mazim.</p>
+              </div>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__item--wrapper">
+                <h2 class="benefits__item--title">Discover</h2>
+                <p class="benefits__item--image">
+                  <img class="image__airplane" src="img/why2.png.png" alt="самолет">
+                </p>
+                <p class="benefits__item--text">Nam liber tempor cum soluta nobis 
+                  eleifend option congue nihil imperdiet doming id quod mazim.</p>
+              </div>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__item--wrapper">
+                <h2 class="benefits__item--title">Book your trip</h2>
+                <p class="benefits__item--image">
+                  <img class="image__airplane" src="img/why3.png" alt="самолет">
+                </p>
+                <p class="benefits__item--text">Nam liber tempor cum soluta nobis 
+                  eleifend option congue nihil imperdiet doming id quod mazim.</p>
+              </div>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__item--wrapper">
+                <h2 class="benefits__item--title">Nice support</h2>
+                <p class="benefits__item--image">
+                  <img class="image__airplane" src="img/why4.png" alt="самолет">
+                </p>
+                <p class="benefits__item--text">Nam liber tempor cum soluta nobis 
+                  eleifend option congue nihil imperdiet doming id quod mazim.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div>
+           <h2>Last minute deals</h2>
+           <p><span></span></p>
+           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+           <ul>
+             <li>
+               <p>
+                 <img src="img/tours-1.jpg" alt="Пейзаж 1">
+               </p>
+               <div>
+                 <ul>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                 </ul>
+               </div>
+               <h3>Paris and Bordeaus</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+               <p><a href=""></a></p>
+             </li>
+             <li>
+               <p>
+                 <img src="img/tours-2.jpg" alt="Пейзаж 2">
+               </p>
+               <div>
+                 <ul>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                 </ul>
+               </div>
+               <h3>Paris and Bordeaus</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+               <p><a href=""></a></p>
+             </li>
+             <li>
+               <p>
+                 <img src="img/tours-3.jpg" alt="Пейзаж 3">
+               </p>
+               <div>
+                 <ul>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                 </ul>
+               </div>
+               <h3>Paris and Bordeaus</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+               <p><a href=""></a></p>
+             </li>
+           </ul>
+        </div>
       </section>
 
     </main>
