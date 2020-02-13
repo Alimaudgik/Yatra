@@ -14,6 +14,7 @@
     <link rel="preload" href="" as="font">
     <link rel="preload" href="" as="font">
     <link rel="stylesheet" href="css/normolize.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="stylesheet" href="css/style.min.css" type="text/css">    
   </head>
   <body class="main-page">
@@ -22,7 +23,7 @@
         <ul class="main-nav__list">
           <li class="main-nav__item logo-header">
             <a class="main-nav__link" href="index.html" title="Лого">
-              <img src="img/logo-header.png" alt="Лого" width="218" height="auto">
+              <img src="img/logo-yatra.png" alt="Лого" width="218" height="auto">
             </a>
           </li>
           <li class="main-nav__item">
@@ -138,15 +139,15 @@
           </ul>
   
           <div class="slogan">
-            <h2 class="slogan__title">WHY WE ARE THE BEST</h2>
-            <p class="slogan__line"><span></span></p>
-            <p class="slogan__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <h2 class="slogan__title section__title">WHY WE ARE THE BEST</h2>
+            <p class="line"><span class="line-inside"></span></p>
+            <p class="slogan__text section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
           </div>
   
           <ul class="benefits__list">
             <li class="benefits__item">
               <div class="benefits__item--wrapper">
-                <h2 class="benefits__item--title">Amazing Travel</h2>
+                <h3 class="benefits__item--title">Amazing Travel</h3>
                 <p class="benefits__item--image">
                   <img class="image__airplane" src="img/why1.png" alt="самолет">
                 </p>
@@ -156,9 +157,9 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__item--wrapper">
-                <h2 class="benefits__item--title">Discover</h2>
+                <h3 class="benefits__item--title">Discover</h3>
                 <p class="benefits__item--image">
-                  <img class="image__airplane" src="img/why2.png.png" alt="самолет">
+                  <img class="image__airplane" src="img/why2.png" alt="самолет">
                 </p>
                 <p class="benefits__item--text">Nam liber tempor cum soluta nobis 
                   eleifend option congue nihil imperdiet doming id quod mazim.</p>
@@ -166,7 +167,7 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__item--wrapper">
-                <h2 class="benefits__item--title">Book your trip</h2>
+                <h3 class="benefits__item--title">Book your trip</h3>
                 <p class="benefits__item--image">
                   <img class="image__airplane" src="img/why3.png" alt="самолет">
                 </p>
@@ -176,7 +177,7 @@
             </li>
             <li class="benefits__item">
               <div class="benefits__item--wrapper">
-                <h2 class="benefits__item--title">Nice support</h2>
+                <h3 class="benefits__item--title">Nice support</h3>
                 <p class="benefits__item--image">
                   <img class="image__airplane" src="img/why4.png" alt="самолет">
                 </p>
@@ -188,71 +189,380 @@
         </div>
       </section>
 
-      <section>
-        <div>
-           <h2>Last minute deals</h2>
-           <p><span></span></p>
-           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-           <ul>
-             <li>
-               <p>
-                 <img src="img/tours-1.jpg" alt="Пейзаж 1">
-               </p>
-               <div>
-                 <ul>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                 </ul>
-               </div>
-               <h3>Paris and Bordeaus</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-               <p><a href=""></a></p>
-             </li>
-             <li>
-               <p>
-                 <img src="img/tours-2.jpg" alt="Пейзаж 2">
-               </p>
-               <div>
-                 <ul>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                 </ul>
-               </div>
-               <h3>Paris and Bordeaus</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-               <p><a href=""></a></p>
-             </li>
-             <li>
-               <p>
-                 <img src="img/tours-3.jpg" alt="Пейзаж 3">
-               </p>
-               <div>
-                 <ul>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                 </ul>
-               </div>
-               <h3>Paris and Bordeaus</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-               <p><a href=""></a></p>
-             </li>
-           </ul>
+      <section class="deals">
+        <div class="deals__wrapper">
+          <h2 class="deals__title section__title">Last minute deals</h2>
+          <p class="line"><span class="line-inside"></span></p>
+          <p class="deals__text section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+          <ul class="deals__list">
+            <li class="deals__item">
+              <div class="deals__image">
+                <img src="img/item-1.jpg" alt="Пейзаж 1" width="310" height="auto">
+                <p class="deals__price">&#36; $ 5000.00</p>
+              </div>
+              <div class="deals__stars">
+                <ul class="stars__list">
+                    <li class="stars__item" width="16" height="15">
+                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
+                      <style type="text/css">
+                      .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
+                    </style>
+                    <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
+                      5.91,5.48 "/>
+                      </svg>
+                    </li>
+                    <li class="stars__item" width="16" height="15">
+                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
+                        <style type="text/css">
+                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
+                      </style>
+                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
+                        5.91,5.48 "/>
+                      </svg>
+                    </li>
+                    <li class="stars__item" width="16" height="15">
+                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
+                        <style type="text/css">
+                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
+                      </style>
+                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
+                        5.91,5.48 "/>
+                      </svg>
+                    </li>
+                    <li class="stars__item current" width="16" height="15">
+                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
+                        <style type="text/css">
+                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
+                      </style>
+                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
+                        5.91,5.48 "/>
+                      </svg>
+                    </li>
+                    <li class="stars__item" width="16" height="15">
+                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
+                        <style type="text/css">
+                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
+                      </style>
+                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
+                        5.91,5.48 "/>
+                      </svg>
+                    </li>
+                </ul>
+              </div>
+              <h3 class="deals__tour-title">Paris and Bordeaus</h3>
+              <p class="deals__tour-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+              <p class="deals__tour-link"><a class="tour-link" href="#">More details</a></p>
+              </li>
+
+              <li class="deals__item">
+                <div class="deals__image">
+                  <img src="img/item-2.jpg" alt="Пейзаж 2" width="310" height="auto">
+                  <p class="deals__price">&#36; $ 7500.00</p>
+                </div>
+                <div class="deals__stars">
+                  <ul class="stars__list">
+                    <li class="stars__item" width="16" height="15">
+                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
+                      <style type="text/css">
+                      .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
+                    </style>
+                    <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
+                      5.91,5.48 "/>
+                      </svg>
+                    </li>
+                    <li class="stars__item" width="16" height="15">
+                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
+                        <style type="text/css">
+                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
+                      </style>
+                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
+                        5.91,5.48 "/>
+                      </svg>
+                    </li>
+                    <li class="stars__item" width="16" height="15">
+                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
+                        <style type="text/css">
+                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
+                      </style>
+                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
+                        5.91,5.48 "/>
+                      </svg>
+                    </li>
+                    <li class="stars__item current" width="16" height="15">
+                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
+                        <style type="text/css">
+                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
+                      </style>
+                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
+                        5.91,5.48 "/>
+                      </svg>
+                    </li>
+                    <li class="stars__item" width="16" height="15">
+                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
+                        <style type="text/css">
+                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
+                      </style>
+                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
+                        5.91,5.48 "/>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+                <h3 class="deals__tour-title">Paris and Bordeaus</h3>
+                <p class="deals__tour-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                <p class="deals__tour-link"><a class="tour-link" href="#">More details</a></p>
+              </li>
+
+              <li class="deals__item">
+                <div class="deals__image">
+                  <img src="img/item-3.jpg" alt="Пейзаж 3" width="310" height="auto">
+                  <p class="deals__price">&#36; $ 5000.00</p>
+                </div>
+                <div class="deals__stars">
+                  <ul class="stars__list">
+                    <li class="stars__item" width="16" height="15">
+                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
+                      <style type="text/css">
+                      .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
+                    </style>
+                    <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
+                      5.91,5.48 "/>
+                      </svg>
+                    </li>
+                    <li class="stars__item" width="16" height="15">
+                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
+                        <style type="text/css">
+                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
+                      </style>
+                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
+                        5.91,5.48 "/>
+                      </svg>
+                    </li>
+                    <li class="stars__item" width="16" height="15">
+                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
+                        <style type="text/css">
+                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
+                      </style>
+                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
+                        5.91,5.48 "/>
+                      </svg>
+                    </li>
+                    <li class="stars__item current" width="16" height="15">
+                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
+                        <style type="text/css">
+                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
+                      </style>
+                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
+                        5.91,5.48 "/>
+                      </svg>
+                    </li>
+                    <li class="stars__item" width="16" height="15">
+                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
+                        <style type="text/css">
+                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
+                      </style>
+                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
+                        5.91,5.48 "/>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+                <h3 class="deals__tour-title">Paris and Bordeaus</h3>
+                <p class="deals__tour-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                <p class="deals__tour-link"><a class="tour-link" href="#">More details</a></p>
+              </li>
+            </ul>
         </div>
       </section>
 
+      <section class="services">
+        <div class="services__wrapper">
+          <div class="services-text">
+            <h2 class="services__title">Lorem ipsum dolor adipiscing elit</h2>
+            <p class="services__text-intro">Lorem Ipsum dummy text</p>
+            <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus interdum urna. Phasellus ac lorem ut tellus ornare condimentum. Nulla facilisi. Nulla at facilisis nibh, in ultricies arcu. Fusce elementum mollis eros, vel ultricies enim consequat in.</p>
+            <ul class="services__list">
+              <li class="services__item">
+                <p class="services__item--number">1</p>
+                <h3 class="services__item--title">Alternative Trips</h3>
+                <p class="services__item--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              </li>
+              <li class="services__item">
+                <p class="services__item--number">2</p>
+                <h3 class="services__item--title">Hot Air Ballooning</h3>
+                <p class="services__item--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              </li>
+              <li class="services__item">
+                <p class="services__item--number">3</p>
+                <h3 class="services__item--title">Lake Tohoe Advanture</h3>
+                <p class="services__item--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              </li>
+              <li class="services__item">
+                <p class="services__item--number">4</p>
+                <h3 class="services__item--title">Lake Tohoe Adventure</h3>
+                <p class="services__item--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              </li>
+            </ul>
+
+            <p class="services__more"><a class="services__more--link" target="_blank" href="services.html" name="All services">View all services</a></p>
+          </div>
+
+          <div class="services__view">
+            <ul class="services__view--list">
+              <li class="services__view--item">
+                <p class="services__view--image">
+                  <img src="img/view-1.jpg" alt="Пейзаж" width="256" height="auto">
+                </p>
+              </li>
+              <li class="services__view--item">
+                <p class="services__view--image">
+                  <img src="img/view-2.jpg" alt="Пейзаж" width="256" height="">
+                </p>
+              </li>
+              <li class="services__view--item">
+                <p class="services__view--image">
+                  <img src="img/view-3.jpg" alt="Пейзаж" width="256" height="">
+                </p>
+              </li>
+              <li class="services__view--item">
+                <p class="services__view--image">
+                  <img src="img/view-4.jpg" alt="Пейзаж" width="256" height="">
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular">
+        <h2 class="popular__title section__title">Last minute deals</h2>
+        <p class="line"><span class="line-inside"></span></p>
+        <p class="popular__text section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+        <ul class="popular__list">
+          <li class="popular__item">
+            <p class="popular__image">
+              <img src="img/tours-1.jpg" alt="Популярный тур" width="355" height="auto">
+            </p>
+            <h3 class="popular__tour-title">Hot Air Ballooning</h3>
+            <p class="popular__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta fringilla ullamcorper. Morbi felis orci, lacinia a velit et, sodales...</p>
+            <p class="popular__more"><a class="popular__more--link" href="" name="Learn more" target="_blank">Learn more</a></p>
+          </li>
+
+          <li class="popular__item">
+            <p class="popular__image">
+              <img src="img/tours-2.jpg" alt="Популярный тур" width="355" height="auto">
+            </p>
+            <h3 class="popular__tour-title">Paragliding</h3>
+            <p class="popular__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta fringilla ullamcorper. Morbi felis orci, lacinia a velit et, sodales...</p>
+            <p class="popular__more"><a class="popular__more--link" href="" name="Learn more" target="_blank">Learn more</a></p>
+          </li>
+
+          <li class="popular__item">
+            <p class="popular__image">
+              <img src="img/tours-3.jpg" alt="Популярный тур" width="355" height="auto">
+            </p>
+            <h3 class="popular__tour-title">Niagara falls</h3>
+            <p class="popular__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta fringilla ullamcorper. Morbi felis orci, lacinia a velit et, sodales...</p>
+            <p class="popular__more"><a class="popular__more--link" href="" name="Learn more" target="_blank">Learn more</a></p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="happy-clients">
+        <div class="happy-cliens__wrapper">
+          <h2 class="popular__title section__title">Last minute deals</h2>
+          <p class="line"><span class="line-inside"></span></p>
+          <p class="popular__text section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+          <ul class="happy-clients__list">
+            <li class="happy-clients__item">
+              <div class="happy-clients__data">
+                <h3 class="happy-clients__name">Jordani Jovanovic</h3>
+                <p class="happy-clients__job">Traveler Head</p>
+                <p class="happy-clients__text">Lorem Ipsum is simply dummy text of the printing and typesetting when an unknown printer took a galley  industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>  
+              </div>
+              <p class="happy-clients__image">
+                <img src="img/Jordani-Jovanovic.jpg" alt="Клиент" width="183" height="auto">
+              </p>
+            </li>
+            
+            <li class="happy-clients__item">
+              <div class="happy-clients__data">
+                <h3 class="happy-clients__name">Adam Smith</h3>
+                <p class="happy-clients__job">Traveler Head</p>
+                <p class="happy-clients__text">Lorem Ipsum is simply dummy text of the printing and typesetting when an unknown printer took a galley  industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>  
+              </div>
+              <p class="happy-clients__image">
+                <img src="img/Client-1.png" alt="Клиент" width="183" height="auto">
+              </p>
+            </li>
+            
+            <li class="happy-clients__item">
+              <div class="happy-clients__data">
+                <h3 class="happy-clients__name">Amanda Paparoach</h3>
+                <p class="happy-clients__job">Traveler Head</p>
+                <p class="happy-clients__text">Lorem Ipsum is simply dummy text of the printing and typesetting when an unknown printer took a galley  industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>  
+              </div>
+              <p class="happy-clients__image">
+                <img src="img/Client-2.png" alt="Клиент" width="183" height="auto">
+              </p>
+            </li>
+            
+            <li class="happy-clients__item">
+              <div class="happy-clients__data">
+                <h3 class="happy-clients__name">Joaquin Lewandowski</h3>
+                <p class="happy-clients__job">Traveler Head</p>
+                <p class="happy-clients__text">Lorem Ipsum is simply dummy text of the printing and typesetting when an unknown printer took a galley  industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>  
+              </div>
+              <p class="happy-clients__image">
+                <img src="img/Client-2.png" alt="Клиент" width="183" height="auto">
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     
-    <footer>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__about">
+          <h3 class="footer__about--title">About Company</h3>
+          <p class="footer__about--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua. Ut exercitation ullamco</p>
+          <p class="footer__about--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore </p>
+        </div>
 
+        <div class="footer__contacts">
+          <div class="footer__contacts--wrapper">
+            <p class="footer__contacts--logo">
+              <img src="img/logo-yatra.png" alt="">
+            </p>
+
+            <p class="footer__contacts--text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="footer__contacts--data">
+              <ul class="footer__contacts--list">
+                <!--Добавить иконки-->
+                <li class="footer__contacts--item">+375 29 123-45-67</li>
+                <li class="footer__contacts--item"><a href="mailto:info@yatra.com">info@yatra.com</a></li>
+                <li class="footer__contacts--item">Location</li>
+              </ul>
+
+              <!--Добавить карту-->
+              </div>
+          </div>
+
+          <ul class="footer__contacts--kinds">
+            <li></li>
+
+          </ul>
+
+        </div>
+  
+        <div>
+  
+        </div>
+      </div>
     </footer>
   </body>
 </html>
