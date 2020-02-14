@@ -28,12 +28,23 @@ gulp.task("style", function () {
     .pipe(server.stream());
 });
 
+gulp.task("norm", function () {
+  return gulp.src("surce/css/*.css")
+  .pipe(plumber())
+  .pipe(postcss([
+    autoprefixer()
+  ]))
+  .pipe(gulp.dest("build/css"))
+  .pipe(server.stream());
+})
+
 
 gulp.task("serve", function () {
   server.init({
     server: "build"
   });
 
+  gulp.watch("source/css/*.css", ["norm"]);
   gulp.watch("source/less/*.less", ["style"]);
   gulp.watch("source/*.html", ["html"])
     .on("change", server.reload);
@@ -50,6 +61,7 @@ gulp.task("build", function (done) {
   run(
     "clean",
     "copy",
+    "norm",
     "style",
     "html",
     done);
@@ -57,9 +69,10 @@ gulp.task("build", function (done) {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{woff, woff2}",
+    "source/fonts/**/**.{woff,woff2}",
     "source/img/**",
     "source/js/**",
+    "source/css/**"
   ], {
     base: "source"
   })

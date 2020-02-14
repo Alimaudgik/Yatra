@@ -1,0 +1,56 @@
+html {
+  background-color: lightblue;
+}
+
+body {
+  margin: 0 auto;
+
+  border-width: 2px;
+  border-style: solid;
+}
+
+
+@media(min-width: 1200px) {
+  html {
+    padding: 0 45px;
+  }
+
+  body {
+    min-width: 1100px;
+    max-width: 1600px;
+
+    border-color: #000000;
+  }
+}
+
+@media(max-width: 1199px) {
+  html {
+    padding: 0 20px;
+  }
+
+  body {
+    min-width: 728px;
+    max-width: 1249px;
+
+    border-color: blue;
+  }
+}
+
+
+@media(max-width: 767px) {
+  html {
+    padding: 0 10px;
+    background-color: lightblue;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 500px;
+    
+    border: 2px solid yellow;
+  }
+  
+}
+
+
