@@ -1,0 +1,150 @@
+@dashed: 1px dashed red;
+@pink: #da284f;
+
+
+
+@media(min-width: 1200px), (max-width: 1400px) {
+  .header {
+    min-height: 688px;
+    background: url(../img/bg-index-header.jpg) center -145px no-repeat, lightblue;
+    background-size: cover;
+  }
+
+  .header__wrapper {
+    border: @dashed;
+
+    margin: 0 auto;
+    width: 1110px;
+  }
+
+  .main-nav {
+    height: 70px;
+    margin-bottom: 230px;
+    border: 1px solid green;
+  }
+  
+  .main-nav__list {
+    display: flex;
+    justify-content: flex-end;
+
+    border: @dashed;
+  }
+
+  .main-nav__item {
+    border: @dashed;
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .logo-header {
+    margin-right: auto;
+
+    & .main__link {
+      display: inline-block;
+      
+      margin-top: 17px;
+      width: 218px;
+      height: 53px;
+
+      border: @dashed;
+      border-color: black;
+    }
+  }
+
+  .main-nav__link {
+    display: inline-block;
+    margin-top: 40px;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    cursor: pointer;
+
+    &:hover {
+      color: @pink;
+    }
+
+    &:active {
+      font-weight: lighter;
+      opacity: 0.8;
+    }
+
+    &.current::after {
+      content: '';
+      display: block;
+      margin-top: 7px;
+      width: 100%;
+      height: 2px;
+      background-color: @pink;
+    }
+  }
+
+
+  .intro {
+
+  }
+
+  .intro__text {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 15px 20px 13px;
+
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: rgba(218, 40, 79, 0.85);
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .welcome,
+  .agency {
+    padding-bottom: 10px;
+  }
+
+  .welcome {
+    padding-top: 12px;
+    font-size: 35px;
+  }
+
+  .agency {
+    padding-top: 11px;
+    font-size: 45px;
+  }
+
+
+}
+
+@media(max-width: 1199px) {
+
+}
+
+
+@media(max-width: 767px) {
+
+}
+
+
+
+
+
+
+
+/*
+@media(min-width: 1200px), (max-width: 1400px) {
+
+
+
+  
+
+}
+*/
+
+
