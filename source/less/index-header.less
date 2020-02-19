@@ -8,6 +8,7 @@
     position: relative;
     background: url(../img/bg-index-header.jpg) center -140px no-repeat, lightblue;
     background-size: 1400px auto;
+    padding-bottom: 1px;
 
     &::before {
       content: '';
@@ -23,7 +24,7 @@
 
   .header__wrapper {
     margin: 0 auto;
-    max-width: 1110px;
+    width: 85%;
   }
 
   .main-nav {
@@ -42,11 +43,12 @@
     display: flex;
     justify-content: space-between;
 
-    width: 760px;
+    width: 65%;
   }
 
   .main__logo {
     width: 218px;
+    border: @dashed;
 
     & .main__link {
       display: inline-block;
@@ -139,6 +141,8 @@
 @media(max-width: 1199px) {
   .header {
     padding: 0 50px;
+    padding-bottom: 1px;
+
     background-position-y: -300px;
 
     &::before {
@@ -147,24 +151,21 @@
   }
 
   .header__wrapper {
-    max-width: 1050px;
+    width: 90%;
   }
 
   .main-nav {
     height: 55px;
-    margin-bottom: 130px;
   }
 
   .main__logo {
-    max-width: 200px;
+    width: 200px;
+    margin-right: 10px;
+    
 
     & .main__link {
       margin-top: 5px;
     }
-  }
-
-  .main-nav__list {
-    width: 480px;
   }
 
   .main-nav__link {
@@ -257,6 +258,7 @@
 
   .agency {
     font-size: 2.5rem;
+    margin-bottom: 40px;
   }
   
   .close,
