@@ -67,7 +67,7 @@
       }
     }
 
-    & input {
+    & input[type=radio] {
       display: none;
     }
 
@@ -172,12 +172,42 @@
     }
   }
 
-  .flights__item--input {
-    padding: 10px;
+  .flights__item--input,
+  .date {
+    position: relative;
+    padding: 10px 11px 7px;
     width: 100%;
+    height: 36px;
+    box-sizing: border-box;
 
     color: #988d8d;
     border: 1px solid #c5bcbc;
+  }
+
+  .date {
+    display: flex;
+    position: relative;
+
+    background: url(../img/calendar.png) calc(100% - 8px) 7px no-repeat;
+  }
+
+  .people-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .adult,
+  .child {
+    width: 44.5%;
+  }
+
+  .prebooking__button--wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+  .prebooking__button {
+    padding: 10px 0;
+    height: 36px;
   }
 
 
