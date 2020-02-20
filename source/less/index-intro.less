@@ -3,7 +3,6 @@
 @fa-font-path: "../fonts";
 
 
-
 @font-face {
   font-family: 'FontAwesome';
   font-weight: normal;
@@ -33,9 +32,12 @@
   }
 
   .prebooking__wrapper {
+    position: relative;
     margin: 0 auto;
     padding: 0;
-    width: 1100px;
+    width: 85%;
+
+    border: @dashed;
   }
 
   .prebooking__list {
@@ -43,22 +45,26 @@
     top: -35px;
     
     display: flex;
+    justify-content: flex-start;
 
     margin-bottom: 225px;
-    width: 450px;
-
-    background-color: #ffffff;
+    width: 100%;
   }
 
   .prebooking__item {
     margin-right: 1px;
-    width: 100%;
+    width: 112px;
     height: 35px;
 
     font-size: 1.1rem;
 
+
     &:last-child {
       margin-right: 0;
+
+      & label {
+        border-right: none;
+      }
     }
 
     & input {
@@ -78,6 +84,7 @@
       text-align: center;
       z-index: 10;
 
+      border-right: 1px solid #ffffff;
       background-color: @pink;
 
       &::before {
@@ -130,7 +137,7 @@
     left: 0;
 
     padding: 40px 30px 45px;
-    width: 1050px;
+    width: calc(100% - 60px);
 
     border: @dashed;
 
@@ -141,10 +148,41 @@
     display: block;
   }
 
-  .flights__formlist {
+  .prebooking__formlist {
     display: flex;
     justify-content: space-between;
   }
+
+  .prebooking__formitem {
+    margin-right: 2%;
+    width: 50%;
+    border: @dashed;
+  }
+
+  .formlist__title {
+    margin-bottom: 10px;
+    
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    font-weight: bold;
+    color: #515151;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .flights__item--input {
+    padding: 10px;
+    width: 100%;
+
+    color: #988d8d;
+    border: 1px solid #c5bcbc;
+  }
+
+
+
+
 
   .slogan {
     text-align: center;

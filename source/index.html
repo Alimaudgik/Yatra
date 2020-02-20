@@ -73,9 +73,20 @@
             <li class="prebooking__item">
               <input id="flights" name="prebooking" value="flights" type="radio" checked><label class="flights" for="flights">Flights</label>
               <form class="prebooking__form flights__form" action="">
-                <ul class="flights__formlist">
-                  <li class="flights__item">
-                    <p class="flights__item--title">Flying from:</p>
+                <ul class="flights__formlist prebooking__formlist">
+                  <li class="flights__item prebooking__formitem">
+                    <p class="flights__item--title formlist__title">Flying from:</p>
+                    <select class="flights__item--input" name="" id="">
+                      <option value="" selected>City of airport</option>
+                      <option value="">Минск</option>
+                      <option value="">Москва</option>
+                      <option value="">Киев</option>
+                      <option value="">Вильнюс</option>
+                      <option value="">Варшава</option>
+                    </select>
+                  </li>
+                  <li class="flights__item prebooking__formitem">
+                    <p class="flights__item--title formlist__title">To:</p>
                     <select class="flights__item--input" name="" id="">
                       <option value="">Минск</option>
                       <option value="">Москва</option>
@@ -84,59 +95,51 @@
                       <option value="">Варшава</option>
                     </select>
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">To:</p>
-                    <select class="flights__item--input" name="" id="">
-                      <option value="">Минск</option>
-                      <option value="">Москва</option>
-                      <option value="">Киев</option>
-                      <option value="">Вильнюс</option>
-                      <option value="">Варшава</option>
-                    </select>
-                  </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">Check-in</p>
+                  <li class="flights__item prebooking__formitem">
+                    <p class="flights__item--title formlist__title">Check-in</p>
                     <input class="date" type="text" name="check-in">
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">Check-out</p>
+                  <li class="flights__item prebooking__formitem">
+                    <p class="flights__item--title formlist__title">Check-out</p>
                     <input type="date" name="check-out">
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">Adult:</p>
-                    <select class="flights__item--input" name="" id="">
-                      <option value="">1</option>
-                      <option value="">2</option>
-                      <option value="">3</option>
-                      <option value="">4</option>
-                      <option value="">5</option>
-                      <option value="">6</option>
-                      <option value="">7</option>
-                      <option value="">8</option>
-                      <option value="">9</option>
-                      <option value="">10</option>
-                      <option value="">11</option>
-                      <option value="">12</option>
-                    </select>
+                  <li class="flights__item prebooking__formitem">
+                    <div class="adult">
+                      <p class="flights__item--title formlist__title">Adult:</p>
+                      <select class="flights__item--input" name="" id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                      </select>
+                    </div>
+                    <div class="child">
+                      <p class="flights__item--title formlist__title">Child (0-12):</p>
+                      <select class="flights__item--input" name="" id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                      </select>
+                    </div>
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">Child (0-12):</p>
-                    <select class="flights__item--input" name="" id="">
-                      <option value="">1</option>
-                      <option value="">2</option>
-                      <option value="">3</option>
-                      <option value="">4</option>
-                      <option value="">5</option>
-                      <option value="">6</option>
-                      <option value="">7</option>
-                      <option value="">8</option>
-                      <option value="">9</option>
-                      <option value="">10</option>
-                      <option value="">11</option>
-                      <option value="">12</option>
-                    </select>
-                  </li>
-                  <li>
+                  <li class="prebooking__formitem">
                     <input type="submit" value="Search here">
                   </li>
                 </ul>
