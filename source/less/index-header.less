@@ -2,6 +2,16 @@
 @pink: #da284f;
 
 
+/*
+
+body desktop - max-width: 1400px;
+body tablet - max-width: 1199px;
+body mobile - min/max-width: 320px/767px;
+
+content: 85%
+
+*/
+
 
 @media(min-width: 1200px), (max-width: 1400px) {
   .header {
@@ -140,7 +150,6 @@
 
 @media(max-width: 1199px) {
   .header {
-    padding: 0 50px;
     padding-bottom: 1px;
 
     background-position-y: -300px;
@@ -155,6 +164,7 @@
   }
 
   .main-nav {
+    margin-bottom: 100px;
     height: 55px;
   }
 
@@ -185,7 +195,6 @@
 
 @media(max-width: 767px) {
   .header {
-    padding: 0 20px;
     padding-bottom: 1px;
 
     background-position-y: top;
@@ -196,7 +205,7 @@
   }
 
   .header__wrapper {
-    max-width: 100%;
+    width: 95%;
   }
 
   .main-nav {

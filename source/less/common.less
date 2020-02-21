@@ -1,5 +1,7 @@
 @dashed: 1px dashed red;
 @pink: #da284f;
+@lightpink: #da4465;
+@darkpink: #b32645;
 
 body {
   margin: 0 auto;
@@ -10,8 +12,7 @@ body {
   background-color: lightblue;
 }
 
-p,
- {
+p, ul {
   margin: 0;
   padding: 0;
 }
@@ -29,6 +30,15 @@ img {
   background-color: @pink;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: @lightpink;
+  }
+
+  &:active {
+    background-color: @darkpink;
+    color: rgba(255, 255, 255, 0.6);
+  }
 
 }
 
@@ -53,7 +63,7 @@ img {
 @media(max-width: 767px) {
   body {
     min-width: 320px;
-    max-width: 767px;
+    max-width: 321px;
 
     border: 2px solid yellow;
   }
