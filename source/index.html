@@ -153,71 +153,78 @@
             <li class="prebooking__item">
               <input id="hotels" name="prebooking" value="hotels" type="radio"><label class="hotels" for="hotels">Hotels</label>
               <form class="prebooking__form flights__form" action="">
-                <ul class="flights__formlist">
-                  <li class="flights__item">
-                    <p class="flights__item--title">Flying from:</p>
-                    <select class="flights__item--input" name="" id="">
-                      <option value="">Минск</option>
-                      <option value="">Москва</option>
-                      <option value="">Киев</option>
-                      <option value="">Вильнюс</option>
-                      <option value="">Варшава</option>
+                <ul class="flights__formlist prebooking__formlist">
+                  <li class="flights__item prebooking__formitem">
+                    <p class="flights__item--title formlist__title">Flying from:</p>
+                    <select class="flights__item--input" name="flights__from" id="flights__from">
+                      <option value="placeholder-from" disabled selected hidden>City of Airport</option>
+                      <option value="Minsk">Минск</option>
+                      <option value="Moscow">Москва</option>
+                      <option value="Kiev">Киев</option>
+                      <option value="Vilnius">Вильнюс</option>
+                      <option value="Warsaw">Варшава</option>
+                      <option value="Any">Любой</option>
                     </select>
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">To:</p>
-                    <select class="flights__item--input" name="" id="">
-                      <option value="">Минск</option>
-                      <option value="">Москва</option>
-                      <option value="">Киев</option>
-                      <option value="">Вильнюс</option>
-                      <option value="">Варшава</option>
+                  <li class="flights__item prebooking__formitem">
+                    <p class="flights__item--title formlist__title">To:</p>
+                    <select class="flights__item--input" name="flights__from" id="flights__from">
+                      <option value="placeholder-to" disabled selected hidden>City of Airport</option>
+                      <option value="Minsk">Минск</option>
+                      <option value="Moscow">Москва</option>
+                      <option value="Kiev">Киев</option>
+                      <option value="Vilnius">Вильнюс</option>
+                      <option value="Warsaw">Варшава</option>
+                      <option value="Any">Любой</option>
                     </select>
+                    <i class="far fa-calendar-alt"></i>
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">Check-in</p>
-                    <input class="date" type="text" name="check-in">
+                  <li class="flights__item prebooking__formitem">
+                    <p class="flights__item--title formlist__title">Departing:</p>
+                    <input id="departing" class="date" type="type" name="departing" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}"><i class="far fa-calendar-alt"></i>
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">Check-out</p>
-                    <input type="date" name="check-out">
+                  <li class="flights__item prebooking__formitem">
+                    <p class="flights__item--title formlist__title">Returning:</p>
+                    <input id="returning" class="date" type="type" name="returning" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}">
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">Adult:</p>
-                    <select class="flights__item--input" name="" id="">
-                      <option value="">1</option>
-                      <option value="">2</option>
-                      <option value="">3</option>
-                      <option value="">4</option>
-                      <option value="">5</option>
-                      <option value="">6</option>
-                      <option value="">7</option>
-                      <option value="">8</option>
-                      <option value="">9</option>
-                      <option value="">10</option>
-                      <option value="">11</option>
-                      <option value="">12</option>
-                    </select>
+                  <li class="flights__item prebooking__formitem people-item">
+                    <div class="adult">
+                      <p class="flights__item--title formlist__title">Adult:</p>
+                      <select class="flights__item--input people-number" name="adult" id="adult">
+                        <option value="one" selected>1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                        <option value="eleven">11</option>
+                        <option value="twelve">12</option>
+                      </select>
+                    </div>
+                    <div class="child">
+                      <p class="flights__item--title formlist__title">Child:</p>
+                      <select class="flights__item--input people-number" name="child" id="child">
+                        <option value="one" selected>1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                        <option value="eleven">11</option>
+                        <option value="twelve">12</option>
+                      </select>
+                    </div>
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">Child (0-12):</p>
-                    <select class="flights__item--input" name="" id="">
-                      <option value="">1</option>
-                      <option value="">2</option>
-                      <option value="">3</option>
-                      <option value="">4</option>
-                      <option value="">5</option>
-                      <option value="">6</option>
-                      <option value="">7</option>
-                      <option value="">8</option>
-                      <option value="">9</option>
-                      <option value="">10</option>
-                      <option value="">11</option>
-                      <option value="">12</option>
-                    </select>
-                  </li>
-                  <li>
-                    <input type="submit" value="Search here">
+                  <li class="prebooking__formitem prebooking__button--wrapper">
+                    <input class="prebooking__button button" type="submit" value="Search here">
                   </li>
                 </ul>
               </form>
@@ -226,144 +233,158 @@
             <li class="prebooking__item">
               <input id="cars" name="prebooking" value="cars" type="radio"><label class="cars" for="cars">Cars</label>
               <form class="prebooking__form flights__form" action="">
-                <ul class="flights__formlist">
-                  <li class="flights__item">
-                    <p class="flights__item--title">Flying from:</p>
-                    <select class="flights__item--input" name="" id="">
-                      <option value="">Минск</option>
-                      <option value="">Москва</option>
-                      <option value="">Киев</option>
-                      <option value="">Вильнюс</option>
-                      <option value="">Варшава</option>
+                <ul class="flights__formlist prebooking__formlist">
+                  <li class="flights__item prebooking__formitem">
+                    <p class="flights__item--title formlist__title">Flying from:</p>
+                    <select class="flights__item--input" name="flights__from" id="flights__from">
+                      <option value="placeholder-from" disabled selected hidden>City of Airport</option>
+                      <option value="Minsk">Минск</option>
+                      <option value="Moscow">Москва</option>
+                      <option value="Kiev">Киев</option>
+                      <option value="Vilnius">Вильнюс</option>
+                      <option value="Warsaw">Варшава</option>
+                      <option value="Any">Любой</option>
                     </select>
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">To:</p>
-                    <select class="flights__item--input" name="" id="">
-                      <option value="">Минск</option>
-                      <option value="">Москва</option>
-                      <option value="">Киев</option>
-                      <option value="">Вильнюс</option>
-                      <option value="">Варшава</option>
+                  <li class="flights__item prebooking__formitem">
+                    <p class="flights__item--title formlist__title">To:</p>
+                    <select class="flights__item--input" name="flights__from" id="flights__from">
+                      <option value="placeholder-to" disabled selected hidden>City of Airport</option>
+                      <option value="Minsk">Минск</option>
+                      <option value="Moscow">Москва</option>
+                      <option value="Kiev">Киев</option>
+                      <option value="Vilnius">Вильнюс</option>
+                      <option value="Warsaw">Варшава</option>
+                      <option value="Any">Любой</option>
                     </select>
+                    <i class="far fa-calendar-alt"></i>
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">Check-in</p>
-                    <input class="date" type="text" name="check-in">
+                  <li class="flights__item prebooking__formitem">
+                    <p class="flights__item--title formlist__title">Departing:</p>
+                    <input id="departing" class="date" type="type" name="departing" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}"><i class="far fa-calendar-alt"></i>
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">Check-out</p>
-                    <input type="date" name="check-out">
+                  <li class="flights__item prebooking__formitem">
+                    <p class="flights__item--title formlist__title">Returning:</p>
+                    <input id="returning" class="date" type="type" name="returning" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}">
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">Adult:</p>
-                    <select class="flights__item--input" name="" id="">
-                      <option value="">1</option>
-                      <option value="">2</option>
-                      <option value="">3</option>
-                      <option value="">4</option>
-                      <option value="">5</option>
-                      <option value="">6</option>
-                      <option value="">7</option>
-                      <option value="">8</option>
-                      <option value="">9</option>
-                      <option value="">10</option>
-                      <option value="">11</option>
-                      <option value="">12</option>
-                    </select>
+                  <li class="flights__item prebooking__formitem people-item">
+                    <div class="adult">
+                      <p class="flights__item--title formlist__title">Adult:</p>
+                      <select class="flights__item--input people-number" name="adult" id="adult">
+                        <option value="one" selected>1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                        <option value="eleven">11</option>
+                        <option value="twelve">12</option>
+                      </select>
+                    </div>
+                    <div class="child">
+                      <p class="flights__item--title formlist__title">Child:</p>
+                      <select class="flights__item--input people-number" name="child" id="child">
+                        <option value="one" selected>1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                        <option value="eleven">11</option>
+                        <option value="twelve">12</option>
+                      </select>
+                    </div>
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">Child (0-12):</p>
-                    <select class="flights__item--input" name="" id="">
-                      <option value="">1</option>
-                      <option value="">2</option>
-                      <option value="">3</option>
-                      <option value="">4</option>
-                      <option value="">5</option>
-                      <option value="">6</option>
-                      <option value="">7</option>
-                      <option value="">8</option>
-                      <option value="">9</option>
-                      <option value="">10</option>
-                      <option value="">11</option>
-                      <option value="">12</option>
-                    </select>
-                  </li>
-                  <li>
-                    <input type="submit" value="Search here">
+                  <li class="prebooking__formitem prebooking__button--wrapper">
+                    <input class="prebooking__button button" type="submit" value="Search here">
                   </li>
                 </ul>
-              </form> 
+              </form>
             </li>
 
             <li class="prebooking__item">
               <input id="cruises" name="prebooking" value="cruises" type="radio"><label class="cruises" for="cruises">Cruises</label> 
               <form class="prebooking__form flights__form" action="">
-                <ul class="flights__formlist">
-                  <li class="flights__item">
-                    <p class="flights__item--title">Flying from:</p>
-                    <select class="flights__item--input" name="" id="">
-                      <option value="">Минск</option>
-                      <option value="">Москва</option>
-                      <option value="">Киев</option>
-                      <option value="">Вильнюс</option>
-                      <option value="">Варшава</option>
+                <ul class="flights__formlist prebooking__formlist">
+                  <li class="flights__item prebooking__formitem">
+                    <p class="flights__item--title formlist__title">Flying from:</p>
+                    <select class="flights__item--input" name="flights__from" id="flights__from">
+                      <option value="placeholder-from" disabled selected hidden>City of Airport</option>
+                      <option value="Minsk">Минск</option>
+                      <option value="Moscow">Москва</option>
+                      <option value="Kiev">Киев</option>
+                      <option value="Vilnius">Вильнюс</option>
+                      <option value="Warsaw">Варшава</option>
+                      <option value="Any">Любой</option>
                     </select>
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">To:</p>
-                    <select class="flights__item--input" name="" id="">
-                      <option value="">Минск</option>
-                      <option value="">Москва</option>
-                      <option value="">Киев</option>
-                      <option value="">Вильнюс</option>
-                      <option value="">Варшава</option>
+                  <li class="flights__item prebooking__formitem">
+                    <p class="flights__item--title formlist__title">To:</p>
+                    <select class="flights__item--input" name="flights__from" id="flights__from">
+                      <option value="placeholder-to" disabled selected hidden>City of Airport</option>
+                      <option value="Minsk">Минск</option>
+                      <option value="Moscow">Москва</option>
+                      <option value="Kiev">Киев</option>
+                      <option value="Vilnius">Вильнюс</option>
+                      <option value="Warsaw">Варшава</option>
+                      <option value="Any">Любой</option>
                     </select>
+                    <i class="far fa-calendar-alt"></i>
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">Check-in</p>
-                    <input class="date" type="text" name="check-in">
+                  <li class="flights__item prebooking__formitem">
+                    <p class="flights__item--title formlist__title">Departing:</p>
+                    <input id="departing" class="date" type="type" name="departing" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}"><i class="far fa-calendar-alt"></i>
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">Check-out</p>
-                    <input type="date" name="check-out">
+                  <li class="flights__item prebooking__formitem">
+                    <p class="flights__item--title formlist__title">Returning:</p>
+                    <input id="returning" class="date" type="type" name="returning" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}">
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">Adult:</p>
-                    <select class="flights__item--input" name="" id="">
-                      <option value="">1</option>
-                      <option value="">2</option>
-                      <option value="">3</option>
-                      <option value="">4</option>
-                      <option value="">5</option>
-                      <option value="">6</option>
-                      <option value="">7</option>
-                      <option value="">8</option>
-                      <option value="">9</option>
-                      <option value="">10</option>
-                      <option value="">11</option>
-                      <option value="">12</option>
-                    </select>
+                  <li class="flights__item prebooking__formitem people-item">
+                    <div class="adult">
+                      <p class="flights__item--title formlist__title">Adult:</p>
+                      <select class="flights__item--input people-number" name="adult" id="adult">
+                        <option value="one" selected>1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                        <option value="eleven">11</option>
+                        <option value="twelve">12</option>
+                      </select>
+                    </div>
+                    <div class="child">
+                      <p class="flights__item--title formlist__title">Child:</p>
+                      <select class="flights__item--input people-number" name="child" id="child">
+                        <option value="one" selected>1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                        <option value="eleven">11</option>
+                        <option value="twelve">12</option>
+                      </select>
+                    </div>
                   </li>
-                  <li class="flights__item">
-                    <p class="flights__item--title">Child (0-12):</p>
-                    <select class="flights__item--input" name="" id="">
-                      <option value="">1</option>
-                      <option value="">2</option>
-                      <option value="">3</option>
-                      <option value="">4</option>
-                      <option value="">5</option>
-                      <option value="">6</option>
-                      <option value="">7</option>
-                      <option value="">8</option>
-                      <option value="">9</option>
-                      <option value="">10</option>
-                      <option value="">11</option>
-                      <option value="">12</option>
-                    </select>
-                  </li>
-                  <li>
-                    <input type="submit" value="Search here">
+                  <li class="prebooking__formitem prebooking__button--wrapper">
+                    <input class="prebooking__button button" type="submit" value="Search here">
                   </li>
                 </ul>
               </form>
@@ -371,7 +392,7 @@
           </ul>
   
           <div class="slogan">
-            <h2 class="slogan__title section__title">WHY WE ARE THE BEST</h2>
+            <h2 class="slogan__title section__title">Why We Are The Best</h2>
             <p class="line"><span class="line-inside"></span></p>
             <p class="slogan__text section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
           </div>
@@ -418,232 +439,121 @@
           <h2 class="deals__title section__title">Last minute deals</h2>
           <p class="line"><span class="line-inside"></span></p>
           <p class="deals__text section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+          
           <ul class="deals__list">
-            <li class="deals__item">
+            <li class="deals__item deals__item--current">
               <div class="deals__image">
-                <img src="img/item-1.jpg" alt="Пейзаж 1" width="310" height="auto">
-                <p class="deals__price">&#36; $ 5000.00</p>
+                <img class="deals__image--item" src="img/item-1.jpg" alt="Пейзаж 1" width="316" height="auto">
+                <p class="deals__price">&#36;5 000.00</p>
               </div>
+
               <div class="deals__stars">
-                <ul class="stars__list">
-                    <li class="stars__item" style="width: 16px; height: 15px">
-                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
-                      <style type="text/css">
-                      .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
-                    </style>
-                    <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
-                      5.91,5.48 "/>
-                      </svg>
-                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 576 512" style="enable-background:new 0 0 576 512;" xml:space="preserve">
-                      <style type="text/css">
-                        .st0{fill:#ffc63f; stroke:#ffc63f; stroke-miterlimit:10;}
-                      </style>
-                      <path d="M528.1,171.5L382,150.2L316.7,17.8c-11.7-23.6-45.6-23.9-57.4,0L194,150.2L47.9,171.5c-26.2,3.8-36.7,36.1-17.7,54.6
-                        l105.7,103l-25,145.5c-4.5,26.3,23.2,46,46.4,33.7L288,439.6l130.7,68.7c23.2,12.2,50.9-7.4,46.4-33.7l-25-145.5l105.7-103
-                        C564.8,207.6,554.3,175.3,528.1,171.5L528.1,171.5z M388.6,312.3l23.7,138.4L288,385.4l-124.3,65.3l23.7-138.4l-100.6-98l139-20.2
-                        l62.2-126l62.2,126l139,20.2L388.6,312.3L388.6,312.3z"/>
-                      </svg>
+                <input type="radio" id="excellent" name="low" value="excellent"><label class="stars__label" for="excellent"></label>
+                      
+                <input type="radio" id="normal" name="low" value="normal"><label class="stars__label" for="normal"></label>
 
-                    </li>
-                    <li class="stars__item" width="16" height="15">
-                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
-                        <style type="text/css">
-                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
-                      </style>
-                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
-                        5.91,5.48 "/>
-                      </svg>
-                    </li>
-                    <li class="stars__item" width="16" height="15">
-                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
-                        <style type="text/css">
-                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
-                      </style>
-                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
-                        5.91,5.48 "/>
-                      </svg>
-                    </li>
-                    <li class="stars__item current" width="16" height="15">
-                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
-                        <style type="text/css">
-                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
-                      </style>
-                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
-                        5.91,5.48 "/>
-                      </svg>
-                    </li>
-                    <li class="stars__item" width="16" height="15">
-                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
-                        <style type="text/css">
-                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
-                      </style>
-                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
-                        5.91,5.48 "/>
-                      </svg>
-                    </li>
-                </ul>
+                <input type="radio" id="soso" name="low" value="soso"><label class="stars__label" for="soso"></label>
+                                    
+                <input type="radio" id="bad" name="low" value="bad" checked><label class="stars__label" for="bad"></label>
+                                            
+                <input type="radio" id="very-bad" name="low" value="very-bad"><label class="stars__label" for="very-bad"></label>
               </div>
-              <h3 class="deals__tour-title lora-font">Paris and Bordeaus</h3>
-              <p class="deals__tour-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-              <p class="deals__tour-link"><a class="tour-link" href="#">More details</a></p>
+
+                <h3 class="deals__tour--title lora-font">Paris and Bordeaus</h3>
+                <p class="deals__tour--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                <p class="deals__tour--link"><a class="tour-link" href="#">More details</a></p>
+              
               </li>
 
               <li class="deals__item">
                 <div class="deals__image">
-                  <img src="img/item-2.jpg" alt="Пейзаж 2" width="310" height="auto">
-                  <p class="deals__price">&#36; $ 7500.00</p>
+                  <img class="deals__image--item" src="img/item-2.jpg" alt="Пейзаж 2" width="310" height="auto">
+                  <p class="deals__price">&#36;7500.00</p>
                 </div>
+
                 <div class="deals__stars">
-                  <ul class="stars__list">
-                    <li class="stars__item" width="16" height="15">
-                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
-                      <style type="text/css">
-                      .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
-                    </style>
-                    <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
-                      5.91,5.48 "/>
-                      </svg>
-                    </li>
-                    <li class="stars__item" width="16" height="15">
-                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
-                        <style type="text/css">
-                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
-                      </style>
-                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
-                        5.91,5.48 "/>
-                      </svg>
-                    </li>
-                    <li class="stars__item" width="16" height="15">
-                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
-                        <style type="text/css">
-                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
-                      </style>
-                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
-                        5.91,5.48 "/>
-                      </svg>
-                    </li>
-                    <li class="stars__item current" width="16" height="15">
-                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
-                        <style type="text/css">
-                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
-                      </style>
-                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
-                        5.91,5.48 "/>
-                      </svg>
-                    </li>
-                    <li class="stars__item" width="16" height="15">
-                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
-                        <style type="text/css">
-                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
-                      </style>
-                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
-                        5.91,5.48 "/>
-                      </svg>
-                    </li>
-                  </ul>
+                  <input type="radio" id="excellent" name="medium" value="excellent"><label class="stars__label" for="excellent"></label>
+                        
+                  <input type="radio" id="normal" name="medium" value="normal"><label class="stars__label" for="normal"></label>
+
+                  <input type="radio" id="soso" name="medium" value="soso" checked><label class="stars__label" for="soso"></label>
+                                      
+                  <input type="radio" id="bad" name="medium" value="bad"><label class="stars__label" for="bad"></label>
+                                              
+                  <input type="radio" id="very-bad" name="medium" value="very-bad"><label class="stars__label" for="very-bad"></label>
                 </div>
-                <h3 class="deals__tour-title lora-font">Paris and Bordeaus</h3>
-                <p class="deals__tour-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                <p class="deals__tour-link"><a class="tour-link" href="#">More details</a></p>
+
+                <h3 class="deals__tour--title lora-font">Paris and Bordeaus</h3>
+                <p class="deals__tour--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                <p class="deals__tour--link"><a class="tour-link" href="#">More details</a></p>
               </li>
 
               <li class="deals__item">
                 <div class="deals__image">
-                  <img src="img/item-3.jpg" alt="Пейзаж 3" width="310" height="auto">
-                  <p class="deals__price">&#36; $ 5000.00</p>
+                  <img class="deals__image--item" src="img/item-3.jpg" alt="Пейзаж 3" width="310" height="auto">
+                  <p class="deals__price">&#36;5000.00</p>
                 </div>
+
                 <div class="deals__stars">
-                  <ul class="stars__list">
-                    <li class="stars__item" width="16" height="15">
-                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
-                      <style type="text/css">
-                      .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
-                    </style>
-                    <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
-                      5.91,5.48 "/>
-                      </svg>
-                    </li>
-                    <li class="stars__item" width="16" height="15">
-                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
-                        <style type="text/css">
-                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
-                      </style>
-                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
-                        5.91,5.48 "/>
-                      </svg>
-                    </li>
-                    <li class="stars__item" width="16" height="15">
-                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
-                        <style type="text/css">
-                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
-                      </style>
-                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
-                        5.91,5.48 "/>
-                      </svg>
-                    </li>
-                    <li class="stars__item current" width="16" height="15">
-                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
-                        <style type="text/css">
-                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
-                      </style>
-                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
-                        5.91,5.48 "/>
-                      </svg>
-                    </li>
-                    <li class="stars__item" width="16" height="15">
-                      <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 15" style="enable-background:new 0 0 16 15;" xml:space="preserve" width="16" hidden="15">
-                        <style type="text/css">
-                        .st0{fill:#ffc63f; stroke:#ffc63f;stroke-miterlimit:10;}
-                      </style>
-                      <polygon class="st0" points="7.97,1.3 10.06,5.5 14.69,6.18 11.35,9.43 12.15,14.05 8,11.86 3.86,14.02 4.64,9.42 1.28,6.14 
-                        5.91,5.48 "/>
-                      </svg>
-                    </li>
-                  </ul>
+                  <input type="radio" id="excellent" name="high" value="excellent"><label class="stars__label" for="excellent"></label>
+                        
+                  <input type="radio" id="normal" name="high" value="normal" checked><label class="stars__label" for="normal"></label>
+
+                  <input type="radio" id="soso" name="high" value="soso"><label class="stars__label" for="soso"></label>
+                                      
+                  <input type="radio" id="bad" name="high" value="bad"><label class="stars__label" for="bad"></label>
+                                              
+                  <input type="radio" id="very-bad" name="high" value="very-bad"><label class="stars__label" for="very-bad"></label>
                 </div>
-                <h3 class="deals__tour-title lora-font">Paris and Bordeaus</h3>
-                <p class="deals__tour-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                <p class="deals__tour-link"><a class="tour-link" href="#">More details</a></p>
+
+                <h3 class="deals__tour--title lora-font">Paris and Bordeaus</h3>
+                <p class="deals__tour--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                <p class="deals__tour--link"><a class="tour-link" href="#">More details</a></p>
+                
               </li>
+
+              <button class="back" type="button">Back</button>
+              <button class="forward" type="button">Forward</button>
             </ul>
         </div>
       </section>
 
       <section class="services">
         <div class="services__wrapper">
-          <div class="services-text">
-            <h2 class="services__title lora-font">Lorem ipsum dolor adipiscing elit</h2>
-            <p class="services__text-intro">Lorem Ipsum dummy text</p>
-            <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus interdum urna. Phasellus ac lorem ut tellus ornare condimentum. Nulla facilisi. Nulla at facilisis nibh, in ultricies arcu. Fusce elementum mollis eros, vel ultricies enim consequat in.</p>
+          <div class="services__text">
+            <div class="services__text--wrapper">
+              <h2 class="services__text--title lora-font">Lorem ipsum dolor adipiscing elit</h2>
+              <p class="services__text--intro">Lorem Ipsum dummy text</p>
+              <p class="services__text--info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus interdum urna. Phasellus ac lorem ut tellus ornare condimentum. Nulla facilisi. Nulla at facilisis nibh, in ultricies arcu. Fusce elementum mollis eros, vel ultricies enim consequat in.</p>
+            </div>
             <ul class="services__list">
               <li class="services__item">
-                <p class="services__item--number">1</p>
+                <p class="services__item--number lora-font"><span>1</span></p>
                 <h3 class="services__item--title lora-font">Alternative Trips</h3>
                 <p class="services__item--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
               </li>
               <li class="services__item">
-                <p class="services__item--number">2</p>
+                <p class="services__item--number lora-font"><span>2</span></p>
                 <h3 class="services__item--title lora-font">Hot Air Ballooning</h3>
                 <p class="services__item--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
               </li>
               <li class="services__item">
-                <p class="services__item--number">3</p>
+                <p class="services__item--number lora-font"><span>3</span></p>
                 <h3 class="services__item--title lora-font">Lake Tohoe Advanture</h3>
                 <p class="services__item--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
               </li>
               <li class="services__item">
-                <p class="services__item--number">4</p>
+                <p class="services__item--number lora-font"><span>4</span></p>
                 <h3 class="services__item--title lora-font">Lake Tohoe Adventure</h3>
                 <p class="services__item--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
               </li>
             </ul>
 
-            <p class="services__more"><a class="services__more--link lora-font" target="_blank" href="services.html" name="All services">View all services</a></p>
+            <p class="services__more"><a class="services__more--link button lora-font" target="_blank" href="services.html" name="all-services">View all services</a></p>
           </div>
 
           <div class="services__view">
-            <ul class="services__view--list">
+            <ul class="services__view--list services__view--list1">
               <li class="services__view--item">
                 <p class="services__view--image">
                   <img src="img/view-1.jpg" alt="Пейзаж" width="256" height="auto">
@@ -654,6 +564,8 @@
                   <img src="img/view-2.jpg" alt="Пейзаж" width="256" height="">
                 </p>
               </li>
+            </ul>
+            <ul class="services__view--list services__view--list2">
               <li class="services__view--item">
                 <p class="services__view--image">
                   <img src="img/view-3.jpg" alt="Пейзаж" width="256" height="">

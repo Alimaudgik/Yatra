@@ -223,6 +223,8 @@
 
     font-size: 2rem;
     line-height: 2rem;
+    text-align: center;
+    text-transform: uppercase;
 
     color: #303030;
   }
@@ -247,7 +249,7 @@
     background-color: @pink;
   }
 
-  .slogan__text {
+  .section__text {
     margin: 0 auto;
     margin-bottom: 50px;
     width: 70%;
@@ -351,7 +353,7 @@
     }
   }
 
-  .slogan__text {
+  .section__text {
     margin-bottom: 30px;
   }
 
@@ -385,7 +387,7 @@
   }
 
   .prebooking__list {
-    margin-bottom: 500px;
+    margin-bottom: 470px;
   }
 
   .prebooking__item {
@@ -421,9 +423,16 @@
     margin-right: 0;
   }
 
-  .section__title,
-  .slogan__text {
+  .formlist__title {
+    margin-bottom: 5px;
+  }
+
+  .section__title {
     margin-bottom: 20px;
+  }
+
+  .section__text {
+    display: none;
   }
 
   .benefits__list {
@@ -450,11 +459,16 @@
     }
   }
 
+  .benefits__item--image,
+  .benefits__item--title {
+    margin-bottom: 5px;
+    line-height: 40px;
+  }
+
   .benefits__item--image {
-    margin-bottom: 10px;
+
     width: 15%;
-    height: 40px;
-    text-align: left;
+    text-align: center;
 
     &::before {
       font-size: 30px;
@@ -462,8 +476,6 @@
   }
 
   .benefits__item--title {
-    align-self: center;
-    margin-bottom: 10px;
     width: 83%;
     font-size: 1.5rem;
     line-height: 40px;
