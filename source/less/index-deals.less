@@ -17,6 +17,7 @@ content, d/t/m: 85% / 90% / 95%
     padding: 75px 0 85px;
 
     background: url(../img/bg-index-deals.jpg) center top no-repeat, #000000;
+    background-size: cover;
 
     &
     .deals__title,
@@ -96,8 +97,6 @@ content, d/t/m: 85% / 90% / 95%
 
     margin-bottom: 15px;
 
-    border: @dashed;
-
     & .deals__image--item {
       margin-left: -2.5%;
       width: 105%;
@@ -132,12 +131,9 @@ content, d/t/m: 85% / 90% / 95%
     & input {
       display: none;
     }
-    
-    border: @dashed;
   }
   
   .stars__label {
-    border: @dashed;
     padding: 0 2px;
     font-size: 0;
     width: 15px;
@@ -170,8 +166,6 @@ content, d/t/m: 85% / 90% / 95%
     line-height: 1.6rem;
     text-align: center;
     color: @pink;
-
-    border: @dashed;
   }
 
   .deals__tour--text {
@@ -184,7 +178,6 @@ content, d/t/m: 85% / 90% / 95%
   }
 
   .deals__tour--link {
-    border: @dashed;
     margin: 0 auto;
     width: 45%;
     margin-top: auto;
@@ -408,7 +401,8 @@ content, d/t/m: 85% / 90% / 95%
 
   .deals__item {
     display: none;
-    width: calc(100% - 10px);
+    margin: 0 auto;
+    width: 70%;
   
     &::before,
     &::after {
@@ -425,10 +419,6 @@ content, d/t/m: 85% / 90% / 95%
   .deals__tour--title,
   .deals__tour--text {
     margin-bottom: 10px;
-  }
-
-  .back, .forward {
-    opacity: 0.8;
   }
 
   .back {

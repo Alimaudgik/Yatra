@@ -58,7 +58,6 @@ content: 85%
 
   .main__logo {
     width: 218px;
-    border: @dashed;
 
     & .main__link {
       display: inline-block;
@@ -197,7 +196,8 @@ content: 85%
   .header {
     padding-bottom: 1px;
 
-    background-position-y: top;
+    background-position-y: bottom;
+    background-size: cover;
     
     &::before {
       display: none;
@@ -216,13 +216,16 @@ content: 85%
   }
 
   .main-nav__list {
-    display: none;
+    margin: 0 auto;
+
+    display: block;
     flex-direction: column;
-    width: 100%;
+    width: 20%;
   }
 
   .main-nav__item {
-    margin-right: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .main__logo {
