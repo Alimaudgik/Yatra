@@ -1,0 +1,249 @@
+@dashed: 1px dashed red;
+@pink: #da284f;
+@lightpink: #da4465;
+@darkpink: #b32645;
+
+
+/*
+body desktop - max-width: 1400px;
+body tablet - max-width: 1199px;
+body mobile - min/max-width: 320px/767px;
+
+content, d/t/m: 85% / 90% / 95%
+*/
+
+
+@media(min-width: 1200px), (max-width: 1400px) {
+  .clients {
+    padding: 70px 0 80px;
+    background-color: #ffffff;
+  }
+
+  .clients__wrapper {
+    margin: 0 auto;
+    width: 85%;
+
+    & .popular__text {
+      margin-bottom: 85px;
+    }
+  }
+
+  .happy-clients__list,
+  .happy-clients__item,
+  .happy-clients__data {
+    display: flex;
+  }
+
+  .happy-clients__list {
+    position: relative;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .clients-button {
+    position: absolute;
+    top: calc(50% - 7px);
+
+    width: 10px;
+    height: 10px;
+
+    font-size: 0;
+
+    border-top: 3px solid #000000;
+    border-left: 3px solid #000000;
+    cursor: pointer;
+
+    &:hover {
+      border-color: grey;
+    }
+
+    &:active {
+      border-color: #000000;
+      border-width: 4px;
+    }
+
+    &.clients__back {
+      left: -35px;
+      transform: rotate(-45deg);
+
+      &:active {
+        left: -36px;
+      }
+    }
+
+    &.clients__forward {
+      right: -35px;
+      transform: rotate(135deg);
+
+      &:active {
+        right: -36px;
+      }
+    }
+  }
+
+  .happy-clients__item {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 49%;
+    min-height: 300px;
+    align-items: flex-start;
+
+    border: @dashed;
+
+    &:last-child {
+      flex-direction: row-reverse;
+
+      & .happy-clients__data {
+        margin-left: 20px;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .happy-clients__data {
+    border: @dashed;
+    margin-right: 20px;
+    padding-top: 50px;
+    width: 200px;
+    
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+
+  .happy-clients__image {
+    width: 225px;
+    height: 300px;
+    border: @dashed;
+    background-position: center bottom;
+    background-repeat: no-repeat, repeat-x;
+
+    &.client-1 {
+      background-image: url(../img/client-1.png), linear-gradient(to top, #c4c4c4, #ffffff 70%);
+      background-size: contain;
+    }
+
+    &.client-2 {
+      background-image: url(../img/client-2.png), linear-gradient(to top, #c4c4c4, #ffffff 70%);
+      background-size: contain;
+    }
+  }
+
+  .happy-clients__quote {
+    margin-bottom: 25px;
+    width: 45px;
+    height: 41px;
+    background: url(../img/quote.png) center no-repeat;
+    background-size: 100%;
+  }
+
+
+  .happy-clients__name {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+  }
+
+  .happy-clients__job {
+    margin-bottom: 17px;
+    font-size: 1.1rem;
+  }
+
+  .happy-clients__text {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+  }
+}
+
+
+@media(max-width: 1199px) {
+  .clients {
+    padding: 50px 0;
+  }
+
+  .clients__wrapper {
+    width: 90%;
+
+    & .popular__text {
+      margin-bottom: 50px;
+    }
+  }
+
+  .clients-button {
+    &.clients__back {
+      left: -25px;
+
+      &:active {
+        left: -26px;
+      }
+    }
+    
+    &.clients__forward {
+      right: -25px;
+
+      &:active {
+        right: -26px;
+      }
+    }
+  }
+  
+  .happy-clients__item {
+    min-height: 225px;
+
+    &:last-child .happy-clients__data {
+      margin-left: 10px;
+    }
+  }
+
+  .happy-clients__data {
+    margin-right: 10px;
+    padding-top: 0;
+    width: 100px;
+    flex-flow: 1;
+  }
+
+  .happy-clients__image {
+    width: 150px;
+    height: 225px;
+  }
+
+  .happy-clients__quote,
+  .happy-clients__name,
+  .happy-clients__job {
+    margin-bottom: 10px;
+  }
+
+  .happy-clients__name {
+    font-size: 1.2rem;
+  }
+
+  .happy-clients__job,
+  .happy-clients__text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+
+}
+
+
+@media(max-width: 767px) {
+  .clients {
+    padding: 25px 0;
+  }
+
+  .clients__wrapper {
+    width: 95%;
+
+    & .popular__text {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+
+
+
+
