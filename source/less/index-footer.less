@@ -125,14 +125,49 @@ content, d/t/m: 85% / 90% / 95%
       content: '\f879';
     }
 
+    &.mail:hover::before {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+
+    &.mail:active::before {
+      opacity: 0.3;
+    }
+
     &.mail::before {
       content: '\f0e0';
+    }
+
+    &.map {
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
 
     &.map::before {
       content: '\f3c5';
     }
   }
+
+  .footer__location {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+
+    display: none;
+    width: 80%;
+    height: 60%;
+
+    z-index: 20;
+  }
+
+
 
   .footer__serv--list {
     display: flex;
