@@ -70,6 +70,7 @@ gulp.task("build", function (done) {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/**.{woff,woff2}",
+    "source/fonts/FontAwesome/css/all.min.css",
     "source/img/**",
     "source/js/**",
     "source/css/**"

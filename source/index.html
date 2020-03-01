@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Yatra</title>
+
     <meta charset="UTF-8">
 
-    <meta name="Description" content="Travel width Yatra">
+    <meta name="description" content="Travel with Yatra">
     <meta name="viewport" content="width=device-width,initial-scale-1">
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="format-detection" content="address=no"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
     
-    <link rel="preload" href="" as="font">
-    <link rel="preload" href="" as="font">
-    <link rel="preload" href="" as="font">
-    <link rel="preload" href="" as="font">
-    <link rel="stylesheet" href="css/normolize.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="preload" href="fonts/Raleway/Raleway-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/Raleway/Raleway-Italic.woff2" as="font">
+    <link rel="preload" href="fonts/Raleway/Raleway-Bold.woff2" as="font">
+    <link rel="preload" href="fonts/Raleway/Raleway-BoldItalic.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css" type="text/css">
     <link rel="stylesheet" href="fonts/FontAwesome/css/all.min.css" type="text/css">
   </head>
@@ -24,31 +23,31 @@
         <nav class="main-nav">
           <div class="main__logo">
             <a class="main__link" href="index.html" title="Лого">
-              <img src="img/logo-yatra.png" alt="Лого" width="218" height="auto">
+              <img src="img/logo-yatra.png" alt="Лого" width="218" height="53">
             </a>
           </div>
 
           <ul class="main-nav__list">
             <li class="main-nav__item current">
-              <a class="main-nav__link" href="index.html"><i class="fas fa-adjust"></i>Home</a>
+              <a class="main-nav__link" href="http://index.html" title="Home">Home</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="about.html">About us</a>
+              <a class="main-nav__link" href="http://about.html" title="About us">About us</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="tours.html"> <span ></span> Tours</a>
+              <a class="main-nav__link" href="http://tours.html" title="Tours">Tours</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="booking.html">Booking</a>
+              <a class="main-nav__link" href="http://booking.html" title="Booking">Booking</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="blog.html">Blog</a>
+              <a class="main-nav__link" href="http://blog.html" title="Blog">Blog</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="reviews.html">Reviews</a>
+              <a class="main-nav__link" href="reviews.html" title="Reviews">Reviews</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="contact.html">Contact us</a>
+              <a class="main-nav__link" href="contacts.html" title="Contacts">Contact us</a>
             </li>
           </ul>
 
@@ -71,11 +70,11 @@
 
           <ul class="prebooking__list">
             <li class="prebooking__item">
-              <input id="flights" name="prebooking" value="flights" type="radio" checked><label class="flights" for="flights">Flights</label>
-              <form class="prebooking__form flights__form" action="">
+              <input id="flights" name="prebooking" value="flights" type="radio" checked><label class="prebooking__label flights" for="flights">Flights</label>
+              <form class="prebooking__form flights__form" action="flights.php">
                 <ul class="flights__formlist prebooking__formlist">
                   <li class="flights__item prebooking__formitem">
-                    <p class="flights__item--title formlist__title">Flying from:</p>
+                    <label for="flights__from" class="flights__item--title formlist__title">Flying from:</label>
                     <select class="flights__item--input" name="flights__from" id="flights__from">
                       <option value="placeholder-from" disabled selected hidden>City of Airport</option>
                       <option value="Minsk">Минск</option>
@@ -87,8 +86,8 @@
                     </select>
                   </li>
                   <li class="flights__item prebooking__formitem">
-                    <p class="flights__item--title formlist__title">To:</p>
-                    <select class="flights__item--input" name="flights__from" id="flights__from">
+                    <label for="flights__to" class="flights__item--title formlist__title">To:</label>
+                    <select class="flights__item--input" name="flights__to" id="flights__to">
                       <option value="placeholder-to" disabled selected hidden>City of Airport</option>
                       <option value="Minsk">Минск</option>
                       <option value="Moscow">Москва</option>
@@ -97,19 +96,18 @@
                       <option value="Warsaw">Варшава</option>
                       <option value="Any">Любой</option>
                     </select>
-                    <i class="far fa-calendar-alt"></i>
                   </li>
                   <li class="flights__item prebooking__formitem">
-                    <p class="flights__item--title formlist__title">Departing:</p>
-                    <input id="departing" class="date" type="type" name="departing" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}"><i class="far fa-calendar-alt"></i>
+                    <label for="departing" class="flights__item--title formlist__title">Departing:</label>
+                    <input id="departing" class="date" type="text" name="departing" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}">
                   </li>
                   <li class="flights__item prebooking__formitem">
-                    <p class="flights__item--title formlist__title">Returning:</p>
-                    <input id="returning" class="date" type="type" name="returning" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}">
+                    <label for="returning" class="flights__item--title formlist__title">Returning:</label>
+                    <input id="returning" class="date" type="text" name="returning" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}">
                   </li>
                   <li class="flights__item prebooking__formitem people-item">
                     <div class="adult">
-                      <p class="flights__item--title formlist__title">Adult:</p>
+                      <label for="adult" class="flights__item--title formlist__title">Adult:</label>
                       <select class="flights__item--input people-number" name="adult" id="adult">
                         <option value="one" selected>1</option>
                         <option value="two">2</option>
@@ -126,7 +124,7 @@
                       </select>
                     </div>
                     <div class="child">
-                      <p class="flights__item--title formlist__title">Child:</p>
+                      <label for="child" class="flights__item--title formlist__title">Child:</label>
                       <select class="flights__item--input people-number" name="child" id="child">
                         <option value="one" selected>1</option>
                         <option value="two">2</option>
@@ -151,242 +149,23 @@
             </li>
 
             <li class="prebooking__item">
-              <input id="hotels" name="prebooking" value="hotels" type="radio"><label class="hotels" for="hotels">Hotels</label>
-              <form class="prebooking__form flights__form" action="">
-                <ul class="flights__formlist prebooking__formlist">
-                  <li class="flights__item prebooking__formitem">
-                    <p class="flights__item--title formlist__title">Flying from:</p>
-                    <select class="flights__item--input" name="flights__from" id="flights__from">
-                      <option value="placeholder-from" disabled selected hidden>City of Airport</option>
-                      <option value="Minsk">Минск</option>
-                      <option value="Moscow">Москва</option>
-                      <option value="Kiev">Киев</option>
-                      <option value="Vilnius">Вильнюс</option>
-                      <option value="Warsaw">Варшава</option>
-                      <option value="Any">Любой</option>
-                    </select>
-                  </li>
-                  <li class="flights__item prebooking__formitem">
-                    <p class="flights__item--title formlist__title">To:</p>
-                    <select class="flights__item--input" name="flights__from" id="flights__from">
-                      <option value="placeholder-to" disabled selected hidden>City of Airport</option>
-                      <option value="Minsk">Минск</option>
-                      <option value="Moscow">Москва</option>
-                      <option value="Kiev">Киев</option>
-                      <option value="Vilnius">Вильнюс</option>
-                      <option value="Warsaw">Варшава</option>
-                      <option value="Any">Любой</option>
-                    </select>
-                    <i class="far fa-calendar-alt"></i>
-                  </li>
-                  <li class="flights__item prebooking__formitem">
-                    <p class="flights__item--title formlist__title">Departing:</p>
-                    <input id="departing" class="date" type="type" name="departing" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}"><i class="far fa-calendar-alt"></i>
-                  </li>
-                  <li class="flights__item prebooking__formitem">
-                    <p class="flights__item--title formlist__title">Returning:</p>
-                    <input id="returning" class="date" type="type" name="returning" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}">
-                  </li>
-                  <li class="flights__item prebooking__formitem people-item">
-                    <div class="adult">
-                      <p class="flights__item--title formlist__title">Adult:</p>
-                      <select class="flights__item--input people-number" name="adult" id="adult">
-                        <option value="one" selected>1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
-                        <option value="six">6</option>
-                        <option value="seven">7</option>
-                        <option value="eight">8</option>
-                        <option value="nine">9</option>
-                        <option value="ten">10</option>
-                        <option value="eleven">11</option>
-                        <option value="twelve">12</option>
-                      </select>
-                    </div>
-                    <div class="child">
-                      <p class="flights__item--title formlist__title">Child:</p>
-                      <select class="flights__item--input people-number" name="child" id="child">
-                        <option value="one" selected>1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
-                        <option value="six">6</option>
-                        <option value="seven">7</option>
-                        <option value="eight">8</option>
-                        <option value="nine">9</option>
-                        <option value="ten">10</option>
-                        <option value="eleven">11</option>
-                        <option value="twelve">12</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="prebooking__formitem prebooking__button--wrapper">
-                    <input class="prebooking__button button" type="submit" value="Search here">
-                  </li>
-                </ul>
+              <input id="hotels" name="prebooking" value="hotels" type="radio"><label class="prebooking__label hotels" for="hotels">Hotels</label>
+              <form class="form-none prebooking__form flights__form" action="hotels.php">
+                
               </form>
             </li>
 
             <li class="prebooking__item">
-              <input id="cars" name="prebooking" value="cars" type="radio"><label class="cars" for="cars">Cars</label>
-              <form class="prebooking__form flights__form" action="">
-                <ul class="flights__formlist prebooking__formlist">
-                  <li class="flights__item prebooking__formitem">
-                    <p class="flights__item--title formlist__title">Flying from:</p>
-                    <select class="flights__item--input" name="flights__from" id="flights__from">
-                      <option value="placeholder-from" disabled selected hidden>City of Airport</option>
-                      <option value="Minsk">Минск</option>
-                      <option value="Moscow">Москва</option>
-                      <option value="Kiev">Киев</option>
-                      <option value="Vilnius">Вильнюс</option>
-                      <option value="Warsaw">Варшава</option>
-                      <option value="Any">Любой</option>
-                    </select>
-                  </li>
-                  <li class="flights__item prebooking__formitem">
-                    <p class="flights__item--title formlist__title">To:</p>
-                    <select class="flights__item--input" name="flights__from" id="flights__from">
-                      <option value="placeholder-to" disabled selected hidden>City of Airport</option>
-                      <option value="Minsk">Минск</option>
-                      <option value="Moscow">Москва</option>
-                      <option value="Kiev">Киев</option>
-                      <option value="Vilnius">Вильнюс</option>
-                      <option value="Warsaw">Варшава</option>
-                      <option value="Any">Любой</option>
-                    </select>
-                    <i class="far fa-calendar-alt"></i>
-                  </li>
-                  <li class="flights__item prebooking__formitem">
-                    <p class="flights__item--title formlist__title">Departing:</p>
-                    <input id="departing" class="date" type="type" name="departing" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}"><i class="far fa-calendar-alt"></i>
-                  </li>
-                  <li class="flights__item prebooking__formitem">
-                    <p class="flights__item--title formlist__title">Returning:</p>
-                    <input id="returning" class="date" type="type" name="returning" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}">
-                  </li>
-                  <li class="flights__item prebooking__formitem people-item">
-                    <div class="adult">
-                      <p class="flights__item--title formlist__title">Adult:</p>
-                      <select class="flights__item--input people-number" name="adult" id="adult">
-                        <option value="one" selected>1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
-                        <option value="six">6</option>
-                        <option value="seven">7</option>
-                        <option value="eight">8</option>
-                        <option value="nine">9</option>
-                        <option value="ten">10</option>
-                        <option value="eleven">11</option>
-                        <option value="twelve">12</option>
-                      </select>
-                    </div>
-                    <div class="child">
-                      <p class="flights__item--title formlist__title">Child:</p>
-                      <select class="flights__item--input people-number" name="child" id="child">
-                        <option value="one" selected>1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
-                        <option value="six">6</option>
-                        <option value="seven">7</option>
-                        <option value="eight">8</option>
-                        <option value="nine">9</option>
-                        <option value="ten">10</option>
-                        <option value="eleven">11</option>
-                        <option value="twelve">12</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="prebooking__formitem prebooking__button--wrapper">
-                    <input class="prebooking__button button" type="submit" value="Search here">
-                  </li>
-                </ul>
+              <input id="cars" name="prebooking" value="cars" type="radio"><label class="prebooking__label cars" for="cars">Cars</label>
+              <form class="form-none prebooking__form flights__form" action="cars.php">
+                
               </form>
             </li>
 
             <li class="prebooking__item">
-              <input id="cruises" name="prebooking" value="cruises" type="radio"><label class="cruises" for="cruises">Cruises</label> 
-              <form class="prebooking__form flights__form" action="">
-                <ul class="flights__formlist prebooking__formlist">
-                  <li class="flights__item prebooking__formitem">
-                    <p class="flights__item--title formlist__title">Flying from:</p>
-                    <select class="flights__item--input" name="flights__from" id="flights__from">
-                      <option value="placeholder-from" disabled selected hidden>City of Airport</option>
-                      <option value="Minsk">Минск</option>
-                      <option value="Moscow">Москва</option>
-                      <option value="Kiev">Киев</option>
-                      <option value="Vilnius">Вильнюс</option>
-                      <option value="Warsaw">Варшава</option>
-                      <option value="Any">Любой</option>
-                    </select>
-                  </li>
-                  <li class="flights__item prebooking__formitem">
-                    <p class="flights__item--title formlist__title">To:</p>
-                    <select class="flights__item--input" name="flights__from" id="flights__from">
-                      <option value="placeholder-to" disabled selected hidden>City of Airport</option>
-                      <option value="Minsk">Минск</option>
-                      <option value="Moscow">Москва</option>
-                      <option value="Kiev">Киев</option>
-                      <option value="Vilnius">Вильнюс</option>
-                      <option value="Warsaw">Варшава</option>
-                      <option value="Any">Любой</option>
-                    </select>
-                    <i class="far fa-calendar-alt"></i>
-                  </li>
-                  <li class="flights__item prebooking__formitem">
-                    <p class="flights__item--title formlist__title">Departing:</p>
-                    <input id="departing" class="date" type="type" name="departing" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}"><i class="far fa-calendar-alt"></i>
-                  </li>
-                  <li class="flights__item prebooking__formitem">
-                    <p class="flights__item--title formlist__title">Returning:</p>
-                    <input id="returning" class="date" type="type" name="returning" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}">
-                  </li>
-                  <li class="flights__item prebooking__formitem people-item">
-                    <div class="adult">
-                      <p class="flights__item--title formlist__title">Adult:</p>
-                      <select class="flights__item--input people-number" name="adult" id="adult">
-                        <option value="one" selected>1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
-                        <option value="six">6</option>
-                        <option value="seven">7</option>
-                        <option value="eight">8</option>
-                        <option value="nine">9</option>
-                        <option value="ten">10</option>
-                        <option value="eleven">11</option>
-                        <option value="twelve">12</option>
-                      </select>
-                    </div>
-                    <div class="child">
-                      <p class="flights__item--title formlist__title">Child:</p>
-                      <select class="flights__item--input people-number" name="child" id="child">
-                        <option value="one" selected>1</option>
-                        <option value="two">2</option>
-                        <option value="three">3</option>
-                        <option value="four">4</option>
-                        <option value="five">5</option>
-                        <option value="six">6</option>
-                        <option value="seven">7</option>
-                        <option value="eight">8</option>
-                        <option value="nine">9</option>
-                        <option value="ten">10</option>
-                        <option value="eleven">11</option>
-                        <option value="twelve">12</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="prebooking__formitem prebooking__button--wrapper">
-                    <input class="prebooking__button button" type="submit" value="Search here">
-                  </li>
-                </ul>
+              <input id="cruises" name="prebooking" value="cruises" type="radio"><label class="prebooking__label cruises" for="cruises">Cruises</label>
+              <form class="form-none prebooking__form flights__form" action="cruises.php">
+                
               </form>
             </li>
           </ul>
@@ -440,81 +219,86 @@
           <p class="line"><span class="line-inside"></span></p>
           <p class="deals__text section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
           
-          <ul class="deals__list">
+          <div class="deals__list--wrapper">
+            <ul class="deals__list">
             <li class="deals__item deals__item--current">
               <div class="deals__image">
-                <img class="deals__image--item" src="img/item-1.jpg" alt="Пейзаж 1" width="316" height="auto">
+                <img class="deals__image--item" src="img/item-1.jpg" alt="Пейзаж 1" width="316" height="210">
                 <p class="deals__price">&#36;5 000.00</p>
               </div>
 
               <div class="deals__stars">
-                <input type="radio" id="excellent" name="low" value="excellent"><label class="stars__label" for="excellent"></label>
+                <input type="radio" id="i1-excellent" name="low" value="excellent"><label class="stars__label" for="i1-excellent"></label>
                       
-                <input type="radio" id="normal" name="low" value="normal"><label class="stars__label" for="normal"></label>
+                <input type="radio" id="i1-normal" name="low" value="normal"><label class="stars__label" for="i1-normal"></label>
 
-                <input type="radio" id="soso" name="low" value="soso"><label class="stars__label" for="soso"></label>
+                <input type="radio" id="i1-soso" name="low" value="soso"><label class="stars__label" for="i1-soso"></label>
                                     
-                <input type="radio" id="bad" name="low" value="bad" checked><label class="stars__label" for="bad"></label>
+                <input type="radio" id="i1-bad" name="low" value="bad" checked><label class="stars__label" for="i1-bad"></label>
                                             
-                <input type="radio" id="very-bad" name="low" value="very-bad"><label class="stars__label" for="very-bad"></label>
+                <input type="radio" id="i1-very-bad" name="low" value="very-bad"><label class="stars__label" for="i1-very-bad"></label>
               </div>
-
+              <div class="deals__tour">
                 <h3 class="deals__tour--title lora-font">Paris and Bordeaus</h3>
                 <p class="deals__tour--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                 <p class="deals__tour--link"><a class="tour-link" href="#">More details</a></p>
-              
-              </li>
+              </div>
+            </li>
 
               <li class="deals__item">
                 <div class="deals__image">
-                  <img class="deals__image--item" src="img/item-2.jpg" alt="Пейзаж 2" width="310" height="auto">
+                  <img class="deals__image--item" src="img/item-2.jpg" alt="Пейзаж 2" width="310" height="213">
                   <p class="deals__price">&#36;7500.00</p>
                 </div>
 
                 <div class="deals__stars">
-                  <input type="radio" id="excellent" name="medium" value="excellent"><label class="stars__label" for="excellent"></label>
+                  <input type="radio" id="i2-excellent" name="medium" value="excellent"><label class="stars__label" for="i2-excellent"></label>
                         
-                  <input type="radio" id="normal" name="medium" value="normal"><label class="stars__label" for="normal"></label>
+                  <input type="radio" id="i2-normal" name="medium" value="normal"><label class="stars__label" for="i2-normal"></label>
 
-                  <input type="radio" id="soso" name="medium" value="soso" checked><label class="stars__label" for="soso"></label>
+                  <input type="radio" id="i2-soso" name="medium" value="soso" checked><label class="stars__label" for="i2-soso"></label>
                                       
-                  <input type="radio" id="bad" name="medium" value="bad"><label class="stars__label" for="bad"></label>
+                  <input type="radio" id="i2-bad" name="medium" value="bad"><label class="stars__label" for="i2-bad"></label>
                                               
-                  <input type="radio" id="very-bad" name="medium" value="very-bad"><label class="stars__label" for="very-bad"></label>
+                  <input type="radio" id="i2-very-bad" name="medium" value="very-bad"><label class="stars__label" for="i2-very-bad"></label>
                 </div>
 
-                <h3 class="deals__tour--title lora-font">Paris and Bordeaus</h3>
-                <p class="deals__tour--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                <p class="deals__tour--link"><a class="tour-link" href="#">More details</a></p>
+                <div class="deals__tour">
+                  <h3 class="deals__tour--title lora-font">Paris and Bordeaus</h3>
+                  <p class="deals__tour--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                  <p class="deals__tour--link"><a class="tour-link" href="#">More details</a></p>
+                </div>
               </li>
 
               <li class="deals__item">
                 <div class="deals__image">
-                  <img class="deals__image--item" src="img/item-3.jpg" alt="Пейзаж 3" width="310" height="auto">
+                  <img class="deals__image--item" src="img/item-3.jpg" alt="Пейзаж 3" width="310" height="211">
                   <p class="deals__price">&#36;5000.00</p>
                 </div>
 
                 <div class="deals__stars">
-                  <input type="radio" id="excellent" name="high" value="excellent"><label class="stars__label" for="excellent"></label>
+                  <input type="radio" id="i3-excellent" name="high" value="excellent"><label class="stars__label" for="i3-excellent"></label>
                         
-                  <input type="radio" id="normal" name="high" value="normal" checked><label class="stars__label" for="normal"></label>
+                  <input type="radio" id="i3-normal" name="high" value="normal" checked><label class="stars__label" for="i3-normal"></label>
 
-                  <input type="radio" id="soso" name="high" value="soso"><label class="stars__label" for="soso"></label>
+                  <input type="radio" id="i3-soso" name="high" value="soso"><label class="stars__label" for="i3-soso"></label>
                                       
-                  <input type="radio" id="bad" name="high" value="bad"><label class="stars__label" for="bad"></label>
+                  <input type="radio" id="i3-bad" name="high" value="bad"><label class="stars__label" for="i3-bad"></label>
                                               
-                  <input type="radio" id="very-bad" name="high" value="very-bad"><label class="stars__label" for="very-bad"></label>
+                  <input type="radio" id="i3-very-bad" name="high" value="very-bad"><label class="stars__label" for="i3-very-bad"></label>
                 </div>
 
-                <h3 class="deals__tour--title lora-font">Paris and Bordeaus</h3>
-                <p class="deals__tour--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                <p class="deals__tour--link"><a class="tour-link" href="#">More details</a></p>
+                <div class="deals__tour">
+                  <h3 class="deals__tour--title lora-font">Paris and Bordeaus</h3>
+                  <p class="deals__tour--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                  <p class="deals__tour--link"><a class="tour-link" href="#">More details</a></p>
+                </div>
                 
               </li>
-
-              <button class="back" type="button">Back</button>
-              <button class="forward" type="button">Forward</button>
             </ul>
+            <button class="back" type="button">Back</button>
+            <button class="forward" type="button">Forward</button>
+          </div>
         </div>
       </section>
 
@@ -549,31 +333,31 @@
               </li>
             </ul>
 
-            <p class="services__more"><a class="services__more--link button lora-font" target="_blank" href="services.html" name="all-services">View all services</a></p>
+            <p class="services__more"><a class="services__more--link button lora-font" target="_blank" href="services.html" title="all-services">View all services</a></p>
           </div>
 
           <div class="services__view">
             <ul class="services__view--list services__view--list1">
               <li class="services__view--item">
                 <p class="services__view--image">
-                  <img src="img/view-1.jpg" alt="Пейзаж" width="256" height="auto">
+                  <img src="img/view-1.jpg" alt="Пейзаж" width="301" height="301">
                 </p>
               </li>
               <li class="services__view--item">
                 <p class="services__view--image">
-                  <img src="img/view-2.jpg" alt="Пейзаж" width="256" height="">
+                  <img src="img/view-2.jpg" alt="Пейзаж" width="292" height="292">
                 </p>
               </li>
             </ul>
             <ul class="services__view--list services__view--list2">
               <li class="services__view--item">
                 <p class="services__view--image">
-                  <img src="img/view-3.jpg" alt="Пейзаж" width="256" height="">
+                  <img src="img/view-3.jpg" alt="Пейзаж" width="293" height="293">
                 </p>
               </li>
               <li class="services__view--item">
                 <p class="services__view--image">
-                  <img src="img/view-4.jpg" alt="Пейзаж" width="256" height="">
+                  <img src="img/view-4.jpg" alt="Пейзаж" width="293" height="293">
                 </p>
               </li>
             </ul>
@@ -590,29 +374,29 @@
           <ul class="popular__list">
             <li class="popular__item">
               <p class="popular__image">
-                <img src="img/tours-1.jpg" alt="Популярный тур" width="355" height="auto">
+                <img src="img/tours-1.jpg" alt="Популярный тур" width="355" height="237">
               </p>
               <h3 class="popular__tour--title lora-font">Hot Air Ballooning</h3>
               <p class="popular__tour--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta fringilla ullamcorper. Morbi felis orci, lacinia a velit et, sodales...</p>
-              <p class="popular__tour--more"><a class="popular__tour--link" href="" name="Learn more" target="_blank">Learn more</a></p>
+              <p class="popular__tour--more"><a class="popular__tour--link" href="#" title="Learn more" target="_blank">Learn more</a></p>
             </li>
 
             <li class="popular__item">
               <p class="popular__image">
-                <img src="img/tours-2.jpg" alt="Популярный тур" width="355" height="auto">
+                <img src="img/tours-2.jpg" alt="Популярный тур" width="353" height="236">
               </p>
               <h3 class="popular__tour--title lora-font">Paragliding</h3>
               <p class="popular__tour--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta fringilla ullamcorper. Morbi felis orci, lacinia a velit et, sodales...</p>
-              <p class="popular__tour--more"><a class="popular__tour--link" href="" name="Learn more" target="_blank">Learn more</a></p>
+              <p class="popular__tour--more"><a class="popular__tour--link" href="#" title="Learn more" target="_blank">Learn more</a></p>
             </li>
 
             <li class="popular__item">
               <p class="popular__image">
-                <img src="img/tours-3.jpg" alt="Популярный тур" width="355" height="auto">
+                <img src="img/tours-3.jpg" alt="Популярный тур" width="352" height="235">
               </p>
               <h3 class="popular__tour--title lora-font">Niagara falls</h3>
               <p class="popular__tour--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta fringilla ullamcorper. Morbi felis orci, lacinia a velit et, sodales...</p>
-              <p class="popular__tour--more"><a class="popular__tour--link" href="" name="Learn more" target="_blank">Learn more</a></p>
+              <p class="popular__tour--more"><a class="popular__tour--link" href="#" title="Learn more" target="_blank">Learn more</a></p>
             </li>
           </ul>
         </div>
@@ -624,31 +408,33 @@
           <p class="line"><span class="line-inside"></span></p>
           <p class="popular__text section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 
-          <ul class="happy-clients__list">
-            <li class="happy-clients__item clients__current">
-              <div class="happy-clients__data">
-                <p class="happy-clients__quote"></p>
-                <h3 class="happy-clients__name lora-font">Jordani Jovanovich</h3>
-                <p class="happy-clients__job">Traveler Head</p>
-                <p class="happy-clients__text">Lorem Ipsum is simply dummy text of the printing and typesetting when an unknown printer took a galley  industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>  
-              </div>
-              <div class="happy-clients__image client-1"></div>
-            </li>
+          <div class="happy-clients__list--wrapper">
+            <ul class="happy-clients__list">
+              <li class="happy-clients__item clients__current">
+                <div class="happy-clients__data">
+                  <p class="happy-clients__quote"></p>
+                  <h3 class="happy-clients__name lora-font">Jordani Jovanovich</h3>
+                  <p class="happy-clients__job">Traveler Head</p>
+                  <p class="happy-clients__text">Lorem Ipsum is simply dummy text of the printing and typesetting when an unknown printer took a galley  industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>  
+                </div>
+                <div class="happy-clients__image client-1"></div>
+              </li>
+              
+              <li class="happy-clients__item">
+                <div class="happy-clients__data">
+                  <p class="happy-clients__quote"></p>
+                  <h3 class="happy-clients__name lora-font">Joaquina Lewandowski</h3>
+                  <p class="happy-clients__job">Traveler Head</p>
+                  <p class="happy-clients__text">Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting when an unknown printer took a galley  industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>  
+                </div>
+                <div class="happy-clients__image client-2"></div>
+              </li>
+            </ul>
             
-            <li class="happy-clients__item">
-              <div class="happy-clients__data">
-                <p class="happy-clients__quote"></p>
-                <h3 class="happy-clients__name lora-font">Joaquin Lewandowski</h3>
-                <p class="happy-clients__job">Traveler Head</p>
-                <p class="happy-clients__text">Lorem Ipsum is simply dummy text of the printing and 
-                  typesetting when an unknown printer took a galley  industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>  
-              </div>
-              <div class="happy-clients__image client-2"></div>
-            </li>
-
             <buttton type="submit" class="clients-button clients__back">Назад</buttton>
             <buttton type="submit" class="clients-button clients__forward">Вперед</buttton>
-          </ul>
+          </div>
         </div>
       </section>
     </main>
@@ -658,6 +444,7 @@
 
         <div class="footer__about footer__item">
           <h3 class="footer__about--title footer__title lora-font">About Company</h3>
+
           <p class="footer__about--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua. Ut exercitation ullamco</p>
           <p class="footer__about--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore </p>
         </div>
@@ -667,35 +454,44 @@
             <div class="footer__contacts--data">
               <p class="footer__contacts--logo">
                 <a class="footer__contacts--link" href="index.html" title="Лого">
-                  <img src="img/logo-yatra.png" alt="Лого" width="218" height="auto">
+                  <img src="img/logo-yatra.png" alt="Лого" width="218" height="53">
                 </a>
               </p>
 
               <p class="footer__contacts--text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
               <ul class="footer__contacts--list">
-                <!--Добавить иконки-->
                 <li class="footer__contacts--item phone">+375 29 123-45-67</li>
                 <li class="footer__contacts--item mail"><a href="mailto:info@yatra.com">info@yatra.com</a></li>
-                <li class="footer__contacts--item map"><!--Добавить карту-->Location</li>
+                <li class="footer__contacts--item map">Location</li>
               </ul>
             </div>
 
             <ul class="footer__serv--list">
-              <li class="footer__serv--item">Hjem</li>
-              <li class="footer__serv--item">Blogg</li>
-              <li class="footer__serv--item">Treningspodden</li>
-              <li class="footer__serv--item">Yoga & Pilates</li>
-              <li class="footer__serv--item">Fysioterapi</li>
+              <li class="footer__serv--item">
+                <a class="footer__serv--link" href="about.html" title="About us">About us</a>
+              </li>
+              <li class="footer__serv--item">
+                <a class="footer__serv--link" href="tours.html" title="Tours">Tours</a>
+              </li>
+              <li class="footer__serv--item">
+                <a class="footer__serv--link" href="booking.html" title="Booking">Booking</a>
+              </li>
+              <li class="footer__serv--item">
+                <a class="footer__serv--link" href="blog.html" title="Blog">Blog</a>
+              </li>
+              <li class="footer__serv--item">
+                <a class="footer__serv--link" href="reviews.html" title="Reviews">Reviews</a>
+              </li>
             </ul>
           </div>
         </div>
   
-        <div class="footer__about footer__item">
+        <div class="footer__about footer__email footer__item">
           <h3 class="footer__about--title footer__title lora-font">Join our mailing list</h3>
           <p class="footer__about--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua. Ut exercitation ullamco</p>
 
-          <form class="footer__about--email" action="">
+          <form class="footer__about--email" action="join-mail.php">
             <div class="form__about--wrapper">
               <input id="email" class="email__addres" type="text" name="email" placeholder="Enter your email address">
               <input class="email__button lora-font" type="submit" value="Send"> 
@@ -706,83 +502,25 @@
             <h4 class="social__list--title lato-font">Stay connected</h4>
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__item--link facebook" href="https://facebook.com" target="_blank" rel="noopener" class="social__link" name="facebook"></a>
+                <a class="social__item--link facebook" href="https://facebook.com" target="_blank" rel="noopener" class="social__link" title="facebook"></a>
               </li>              
               <li class="social__item">
-                <a class="social__item--link vkontakte" href="https://vk.com"  target="_blank" rel="noopener" class="social__link" name="vkontakte"></a>
+                <a class="social__item--link vkontakte" href="https://vk.com"  target="_blank" rel="noopener" class="social__link" title="vkontakte"></a>
               </li>
               <li class="social__item">
-                <a class="social__item--link twitter" href="https://twitter.com" target="_blank" rel="noopener" class="social__link" name="twitter"></a>
+                <a class="social__item--link twitter" href="https://twitter.com" target="_blank" rel="noopener" class="social__link" title="twitter"></a>
               </li>
               <li class="social__item">
-                <a class="social__item--link instagram" href="https://instagram.com"  target="_blank" rel="noopener" class="social__link" name="instagram"></a>
+                <a class="social__item--link instagram" href="https://instagram.com"  target="_blank" rel="noopener" class="social__link" title="instagram"></a>
               </li>
               <li class="social__item">
-                <a class="social__item--link youtube" href="https://youtube.com"  target="_blank" rel="noopener" class="social__link" name="youtube"></a>
+                <a class="social__item--link youtube" href="https://youtube.com"  target="_blank" rel="noopener" class="social__link" title="youtube"></a>
               </li>
             </ul>
-            
-
-            <!--
-<ul class="social__list">
-              <li class="social__item">
-                <a href="https://instagram.com"  target="_blank" rel="noopener" class="social__link" name="instagram">
-                  <svg class="insta" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
-                <style type="text/css">
-                </style>
-                <path d="M17,1.5c2.48,0,4.5,2.02,4.5,4.5v11c0,2.48-2.02,4.5-4.5,4.5H6.01c-2.48,0-4.5-2.02-4.5-4.5V6
-                  c0-2.48,2.02-4.5,4.5-4.5L17,1.5 M17,0H6.01c-3.3,0-6,2.7-6,6v11c0,3.3,2.7,6,6,6h11c3.3,0,5.99-2.7,5.99-6V6C23,2.7,20.3,0,17,0
-                  L17,0z"/>
-                <path d="M11.51,7.08c2.44,0,4.43,1.99,4.43,4.43c0,2.44-1.99,4.43-4.43,4.43c-2.44,0-4.43-1.99-4.43-4.43
-                  C7.08,9.06,9.06,7.08,11.51,7.08 M11.51,5.58c-3.27,0-5.93,2.65-5.93,5.93s2.65,5.93,5.93,5.93s5.93-2.65,5.93-5.93
-                  S14.78,5.58,11.51,5.58L11.51,5.58z"/>
-                <circle cx="17.65" cy="5.38" r="1.34"/>
-                </svg>  
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="https://twitter.com" target="_blank" rel="noopener" class="social__link" name="twitter">
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 17.5 14.66" style="enable-background:new 0 0 17.5 14.66;" xml:space="preserve">
-                  <g id="W6EeEF_1_">
-                  <g>
-                   <path d="M11.28,0.15c1.74-0.48,3.07,0.26,3.68,1.15c0.69-0.23,1.37-0.47,2.07-0.69c0,0.84-0.54,1.48-0.88,1.73
-                     c0.7,0.16,1.34-0.48,1.34-0.48c-0.17,0.98-1.04,1.75-1.61,1.98c-0.24,6.59-3.27,10.96-10.38,10.82c-0.54,0,0.08,0-0.46,0
-                     c-0.42,0-4.29-0.45-5.05-1.84c2.34,0.19,4.01-0.41,4.84-1.15c-0.99-0.29-2.76-0.46-3.07-2.88c0.36,0.1,0.58,0.22,1.23,0.12
-                     C1.76,8.07,0.38,7.37,0.46,5.22c0.29,0.32,1.1,0.52,1.38,0.46C1.12,5.44-0.19,2.4,0.92,0.84c1.87,1.81,3.85,3.52,7.37,3.69
-                     C8.51,2.29,9.46,0.79,11.28,0.15z"/>
-                  </g>
-                  </g>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="https://facebook.com" target="_blank" rel="noopener" class="social__link" name="facebook">
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 8.67 18.94" style="enable-background:new 0 0 8.67 18.94;" xml:space="preserve">
-                  <path d="M6.28,3.36c0.8,0,1.6,0,2.4,0c0-1.12,0-2.24,0-3.36C7.71,0,6.75,0,5.79,0C2.66,0.18,1.54,2.39,1.95,6.11H0v3.52h1.96
-                    c0,3.1,0,6.21,0,9.31c1.28,0,2.56,0,3.84,0c0-3.1,0-6.21,0-9.31h2.86V6.11H5.79C5.77,5.07,5.75,3.71,6.28,3.36z"/>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="https://youtube.com"  target="_blank" rel="noopener" class="social__link" name="youtube">
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 19.98 14.02" style="enable-background:new 0 0 19.98 14.02;" xml:space="preserve">
-                <path d="M17.14,0H2.84C1.27,0,0,1.28,0,2.83v8.35c0,1.56,1.27,2.83,2.84,2.83h14.31c1.56,0,2.83-1.28,2.83-2.83V2.83
-                  C19.98,1.28,18.7,0,17.14,0z M7.04,10.39V3.62l6.77,3.38L7.04,10.39z"/>
-                </svg>
-                </a>
-              </li>
-            </ul>
-            -->
-            
-            
           </div>
         </div>
 
-        <p class="footer__copyright lato-font">Copyright © 2019 Lorem Ipsum is simply dummy text. All Rights Reserved.</p>
+        <p class="footer__copyright lato-font">Copyright © 2020. All Rights Reserved.</p>
       
       </div>
     </footer>

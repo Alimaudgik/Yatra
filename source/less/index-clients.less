@@ -28,6 +28,11 @@ content, d/t/m: 85% / 90% / 95%
     }
   }
 
+  .happy-clients__list--wrapper {
+    position: relative;
+    border: @dashed;
+  }
+
   .happy-clients__list,
   .happy-clients__item,
   .happy-clients__data {
@@ -35,7 +40,6 @@ content, d/t/m: 85% / 90% / 95%
   }
 
   .happy-clients__list {
-    position: relative;
     flex-flow: row nowrap;
     justify-content: space-between;
   }
@@ -89,7 +93,7 @@ content, d/t/m: 85% / 90% / 95%
     min-height: 300px;
     align-items: flex-start;
 
-    &:last-child {
+    &:nth-child(2n) {
       flex-direction: row-reverse;
 
       & .happy-clients__data {
@@ -133,7 +137,6 @@ content, d/t/m: 85% / 90% / 95%
     background: url(../img/quote.png) center no-repeat;
     background-size: 100%;
   }
-
 
   .happy-clients__name {
     margin: 0;
@@ -197,7 +200,7 @@ content, d/t/m: 85% / 90% / 95%
     margin-right: 10px;
     padding-top: 0;
     width: 100px;
-    flex-flow: 1;
+    flex-grow: 1;
   }
 
   .happy-clients__image {
@@ -268,7 +271,23 @@ content, d/t/m: 85% / 90% / 95%
     display: none;
   }
 
+  .clients-button {
+    &.clients__back {
+      left: 5px;
 
+      &:active {
+        left: 4px;
+      }
+    }
+    
+    &.clients__forward {
+      right: 5px;
+
+      &:active {
+        right: 4px;
+      }
+    }
+  }
 }
 
 

@@ -3,9 +3,6 @@
 @lightpink: #da4465;
 @darkpink: #b32645;
 
-
-
-
 /*
 body desktop - max-width: 1400px;
 body tablet - max-width: 1199px;
@@ -30,10 +27,10 @@ content, d/t/m: 85% / 90% / 95%
       left: 0;
       width: 100%;
       height: 100%;
-      border: @dashed;
-      
-      background: url(../img/bg-footer.jpg) center -10px no-repeat;
-      background-size: 105% auto;
+      /*background: url(../img/bg-footer.jpg) center -10px no-repeat;
+      background-size: 105% auto;*/
+      background: url(../img/bg-index-footer1400.jpg) center top no-repeat;
+      background-size: cover;
 
       opacity: 0.11;
     }
@@ -56,8 +53,6 @@ content, d/t/m: 85% / 90% / 95%
   .footer__item {
     margin-bottom: 35px;
     width: 31%;
-
-    border: @dashed;
   }
 
   .footer__about,
@@ -95,17 +90,7 @@ content, d/t/m: 85% / 90% / 95%
 
   .footer__contacts--logo {
     margin: 0 auto 35px;
-    width: 218px;
-
-    & .footer__contacts--link {
-      &:hover {
-        opacity: 0.6;
-      }
-
-      &:active {
-         opacity: 0.3;
-       }
-    }
+    width: 65%;
   }
 
   .footer__contacts--text {
@@ -179,22 +164,19 @@ content, d/t/m: 85% / 90% / 95%
   .form__about--wrapper {
     position: relative;
     margin-bottom: 40px;
-    border: @dashed;
   }
 
   .email__addres {
     display: block;
 
     padding: 0 25px;
-    width: calc(100% - 50px);
+    width: 100%;
     height: 50px;
 
     font-size: 0.9rem;
 
     border: none;
     border-radius: 25px;
-    
-    outline: none;
   }
 
   .email__button {
@@ -213,7 +195,6 @@ content, d/t/m: 85% / 90% / 95%
     text-transform: uppercase;
     color: #ffffff;
     cursor: pointer;
-    outline: none;
 
     &:hover {
       background-color: @lightpink;
@@ -238,6 +219,7 @@ content, d/t/m: 85% / 90% / 95%
 
   .social__item {
     margin-right: 25px;
+    margin-bottom: 10px;
 
     &:last-child {
       margin: 0;
@@ -252,12 +234,18 @@ content, d/t/m: 85% / 90% / 95%
     width: 30px;
     height: 30px;
 
-    border: @dashed;
-
     &::before {
       font-family: 'Font Awesome', 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
       font-size: 2.1rem;
       font-weight: 900;
+    }
+
+    &:hover::before {
+      transform: scale(1.3);
+    }
+
+    &:active::before {
+      transform: scale(0.7);
     }
 
     &.facebook::before {
@@ -297,12 +285,120 @@ content, d/t/m: 85% / 90% / 95%
     width: 90%;
   }
 
+  .footer {
+    padding-bottom: 20px;
+/*
+    &::before {
+      background-position-y: 0;
+      background-size: cover;
+    }*/
+  }
+
+  .footer__item {
+    margin-bottom: 20px;
+  }
+
+  .footer__about,
+  .footer__social {
+    padding-top: 50px;
+  }
+
+  .footer__about--title,
+  .footer__social--title {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+
+  .footer__about--text,
+  .footer__social--text {
+    margin-bottom: 15px;
+    line-height: 1.5rem;
+  }
+
+  .footer__contacts--data {
+    padding-top: 20px;
+  }
+
+  .footer__contacts--logo {
+    margin-bottom: 20px;
+    width: 220px;
+  }
+
+  .footer__contacts--text {
+    margin-bottom: 20px;
+    line-height: 1.2rem;
+  }
+
+  .footer__contacts--list {
+    width: 80%;
+  }
+
+  .footer__contacts--item {
+    margin-bottom: 15px;
+  }
+
+  .footer__serv--list {
+    padding: 10px 0;
+  }
+
+  .footer__serv--item {
+    line-height: 1.5rem;
+  }
+
+  .form__about--wrapper {
+    margin-bottom: 20px;
+  }
+
+  .email__addres {
+    padding: 0 10px;
+  }
+
+  .email__button {
+    width: 25%;
+  }
+
+  .social__list--title {
+    font-size: 1.5rem;
+  }
+
+  .social__list {
+    margin-bottom: 0px;
+  }
 }
 
 
 @media(max-width: 767px) {
   .footer__wrapper {
+    flex-direction: column;
+
+    padding-top: 20px;
     width: 95%;
+  }
+
+  .footer__item {
+    width: 100%;
+  }
+
+  .footer__about {
+    display: none;
+  }
+
+  .footer__contacts--wrapper {
+    border: none;
+  }
+
+  .footer__email {
+    display: block;
+    padding: 0 50px;
+    width: calc(100% - 100px);
+  }
+
+  .social__list {
+    justify-content: center;
+  }
+
+  .social__list--title {
+    text-align: center;
   }
 
 

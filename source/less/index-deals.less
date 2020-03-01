@@ -16,7 +16,7 @@ content, d/t/m: 85% / 90% / 95%
   .deals {
     padding: 75px 0 85px;
 
-    background: url(../img/bg-index-deals.jpg) center top no-repeat, #000000;
+    background: url(../img/bg-index-deals1400.jpg) center top no-repeat, #000000;
     background-size: cover;
 
     &
@@ -31,8 +31,11 @@ content, d/t/m: 85% / 90% / 95%
     width: 85%;
   }
 
-  .deals__list {
+  .deals__list--wrapper {
     position: relative;
+  }
+
+  .deals__list {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -174,7 +177,7 @@ content, d/t/m: 85% / 90% / 95%
     font-size: 1.1rem;
     line-height: 1.5rem;
     text-align: center;
-    color: #777777;
+    color: #303030;
   }
 
   .deals__tour--link {
@@ -197,7 +200,6 @@ content, d/t/m: 85% / 90% / 95%
     
       &:active {
         background-color: @darkpink;
-        color: rgba(255, 255, 255, 0.6);
       }
     }
   }
@@ -394,10 +396,6 @@ content, d/t/m: 85% / 90% / 95%
   .deals__wrapper {
     width: 95%;
   }
-/*
-  .deals__list {
-    flex-direction: column;
-  }*/
 
   .deals__item {
     display: none;
