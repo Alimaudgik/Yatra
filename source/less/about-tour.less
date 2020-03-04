@@ -48,8 +48,6 @@ content, d/t/m: 85% / 90% / 95%
     flex-basis: 42%;
 
     color: #ffffff;
-
-    border: @dashed;
   }
 
   .promo-tour__title {
@@ -111,12 +109,6 @@ content, d/t/m: 85% / 90% / 95%
   }
 
   .about-tour__review {
-    border: @dashed;
-/*
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-*/
     position: relative;
 
     padding-bottom: 20px;
@@ -128,19 +120,41 @@ content, d/t/m: 85% / 90% / 95%
     border-top-right-radius: 20px;
 
     background-color: @pink;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+
+      z-index: -10;
+
+    }
+
+    &::before {
+      left: -60px;
+      top: -35px;
+
+      width: 116px;
+      height: 268px;
+      background: url(../img/about-diving-pic1.png) left top no-repeat;
+      background-size: 116px 268px;
+    }
+
+    &::after {
+      right: -85px;
+      bottom: 0;
+
+      width: 130px;
+      height: 250px;
+      background: url(../img/about-diving-pic2.png) left top no-repeat;
+      background-size: 130px 250px;
+    }
   }
 
   .review-item__user {
-    border: @dashed;
-    border-color: blue;
-
-    /*position: absolute;
-    left: calc(50% - 45%);
-    top: 25px;*/
-
     display: none;
     padding-top: 25px;
-    margin-bottom: ;
   }
 
   .review-item__user--image {
@@ -163,9 +177,6 @@ content, d/t/m: 85% / 90% / 95%
   }
 
   .review-item__user--text {
-    border: @dashed;
-    border-color: blue;
-
     position: relative;
     text-align: center;
 
@@ -180,7 +191,7 @@ content, d/t/m: 85% / 90% / 95%
 
     &::before {
       content: '\f10d';
-      left: -15px;
+      left: -10px;
       top: -40px;
     }
 
@@ -203,9 +214,6 @@ content, d/t/m: 85% / 90% / 95%
     margin: 0 auto;
     margin-bottom: 35px;
     width: 90%;
-
-    border: @dashed;
-    border-color: blue;
 
     & input {
       display: none;
@@ -271,6 +279,10 @@ content, d/t/m: 85% / 90% / 95%
 
   .about-tour__review {
     flex-basis: 50%;
+
+    &:after {
+      right: -10%;
+    }
   }
 
   .review-item__user--image {
@@ -303,6 +315,13 @@ content, d/t/m: 85% / 90% / 95%
   .about-tour__promo,
   .about-tour__review {
     flex-basis: 100%
+  }
+
+  .about-tour__review {
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   .about-tour__promo {
