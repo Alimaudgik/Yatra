@@ -1,0 +1,335 @@
+@dashed: 1px dashed red;
+@pink: #da284f;
+@lightpink: #da4465;
+@darkpink: #b32645;
+
+/*
+body desktop - max-width: 1400px;
+body tablet - max-width: 1199px;
+body mobile - min/max-width: 320px/767px;
+
+content, d/t/m: 85% / 90% / 95%
+*/
+
+@media(min-width: 1200px), (max-width: 1400px) {
+  .about-tour {
+    position: relative;
+    padding: 85px 0 0;
+
+    background-color: #000000;
+    background-size: cover;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      background: url(../img/about-diving1400.jpg) center top no-repeat;
+      background-size: cover;
+
+      z-index: 10;
+      opacity: 0.25;
+    }
+  }
+
+  .about-tour__wrapper {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .about-tour__promo {
+    padding: 35px 0 70px;
+    flex-basis: 42%;
+
+    color: #ffffff;
+
+    border: @dashed;
+  }
+
+  .promo-tour__title {
+    margin-bottom: 50px;
+    
+    font-size: 2.1rem;
+    line-height: 2.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .about-tour__text {
+    margin-bottom: 40px;
+
+    line-height: 1.7rem;
+  }
+
+  .about-tour__button {
+    width: 175px;
+  }
+
+  .about-tour__link {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 175px;
+    height: 40px;
+
+    color: @pink;
+
+    border: 3px solid @pink;
+    border-radius: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -2px;
+      top: -2px;
+
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+
+      border: 1px solid #6d80a7;
+      border-radius: 20px;
+    }
+
+    &:active {
+      border-color: #ffffff;
+      color: #ffffff;
+      opacity: 1;
+
+      &::before {
+        border-color: @pink;
+      }
+    }
+  }
+
+  .about-tour__review {
+    border: @dashed;
+/*
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+*/
+    position: relative;
+
+    padding-bottom: 20px;
+    flex-basis: 48%;
+
+    color: #ffffff;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    background-color: @pink;
+  }
+
+  .review-item__user {
+    border: @dashed;
+    border-color: blue;
+
+    /*position: absolute;
+    left: calc(50% - 45%);
+    top: 25px;*/
+
+    display: none;
+    padding-top: 25px;
+    margin-bottom: ;
+  }
+
+  .review-item__user--image {
+    position: relative;
+    left: -2px;
+    top: -2px;
+    margin: 0 auto 40px;
+    width: 140px;
+    height: 140px;
+
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    & img {
+      width: 145px;
+      height: 145px;;
+    }
+  }
+
+  .review-item__user--text {
+    border: @dashed;
+    border-color: blue;
+
+    position: relative;
+    text-align: center;
+
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      font-family: 'FontAwesome', 'FontAwesome 5 Free', 'FontAwesome 5 Free';
+      font-size: 34px;
+      font-weight: 900;
+    }
+
+    &::before {
+      content: '\f10d';
+      left: -15px;
+      top: -40px;
+    }
+
+    &::after {
+      content: '\f10d';
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .review-item__user--quote {
+    margin-bottom: 25px;
+    line-height: 1.7rem;
+  }
+
+  .about-tour__review--list {
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 0 auto;
+    margin-bottom: 35px;
+    width: 90%;
+
+    border: @dashed;
+    border-color: blue;
+
+    & input {
+      display: none;
+    }
+  }
+
+  .review-item__label {
+    position: absolute;
+    bottom: 20px;
+    border-color: blue;
+    display: block;
+    width: 12px;
+    height: 12px;
+
+    border: 1px solid #788fb5;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &[for='promo-review1'] {
+      left: calc(50% - 30px);
+    }
+
+    &[for='promo-review2'] {
+      left: calc(50% - 6px);
+    }
+
+    &[for='promo-review3'] {
+      left: calc(50% + 18px);
+    }
+  }
+
+  .review-item__input:checked + .review-item__label {
+    border-color: #ffffff;
+  }
+
+  .review-item__input:checked + .review-item__label + .review-item__user {
+    display: block;
+  }
+}
+
+
+@media(max-width: 1199px) {
+  .about-tour {
+    padding-top: 50px;
+  }
+
+  .about-tour__promo  {
+    padding: 0;
+    flex-basis: 45%;
+  }
+
+  .promo-tour__title {
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  .about-tour__text {
+    margin-bottom: 20px;
+
+    line-height: 1.5rem;
+  }
+
+  .about-tour__review {
+    flex-basis: 50%;
+  }
+
+  .review-item__user--image {
+    margin-bottom: 20px;
+  }
+
+  .review-item__user--text {
+    &::before,
+    &::after {
+      font-size: 30px;
+    }
+
+    &::before {
+      left: 0;
+      top: -35px;
+    }
+  }
+}
+
+
+@media(max-width: 767px) {
+  .about-tour {
+    padding-top: 20px;
+  }
+
+  .about-tour__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .about-tour__promo,
+  .about-tour__review {
+    flex-basis: 100%
+  }
+
+  .about-tour__promo {
+    padding: 0 0 25px;
+    text-align: center;
+  }
+
+  .promo-tour__title {
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .about-tour__text {
+
+  }
+
+  .about-tour__button {
+    margin: 0 auto;
+  }
+
+  
+
+
+}
+
+
+
+
+
