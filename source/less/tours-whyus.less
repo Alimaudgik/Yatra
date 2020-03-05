@@ -1,0 +1,255 @@
+@dashed: 1px dashed red;
+@pink: #da284f;
+@lightpink: #da4465;
+@darkpink: #b32645;
+
+
+/*
+body desktop - max-width: 1400px;
+body tablet - max-width: 1199px;
+body mobile - min/max-width: 320px/767px;
+
+content, d/t/m: 85% / 90% / 95%
+*/
+
+
+@media(min-width: 1200px), (max-width: 1400px) {
+  .whyus {
+    padding: 30px 0 55px;
+    background: url(../img/tours-whyus-bg.jpg) center bottom no-repeat, #70deeb;
+    background-size: cover;
+  }
+
+  .whyus__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .whyus__text {
+    flex-grow: 1;
+
+    padding-top: 60px;
+    flex-basis: 200px;
+    
+    margin-right: 70px;
+  }
+
+  .whyus__title {
+    margin-bottom: 30px;
+
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    color: @pink;
+    
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: '';
+
+      margin-left: 25px;
+      width: 40px;
+      height: 2px;
+      
+      background-color: #ffffff;
+    }
+  }
+
+  .whyus__title--text {
+    margin-bottom: 60px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .whyus__item {
+    position: relative;
+
+    margin-bottom: 40px;
+    padding-left: 80px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 50px;
+      height: 50px;
+      background: url(../img/tours-globus.png) center top no-repeat;
+      background-size: 50px 49px;
+    }
+  }
+
+  .whyus__item--title {
+    margin-bottom: 20px;
+
+    font-size: 1.7rem;
+    color: @pink;
+  }
+
+  .whyus__item--text {
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+  }
+
+  .whyus__tourist {
+    position: relative;
+    flex-basis: 470px;
+    height: 624;
+    
+    z-index: 20;
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      left: 10px;
+      top: 40px;
+
+      width: 360px;
+      height: 420px;
+
+      border: 30px solid #ffffff;
+
+      z-index: 10;
+    }
+  }
+
+  .whyus__image--wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 30;
+  }
+}
+
+
+@media(max-width: 1199px) {
+  .whyus {
+    padding-bottom: 45px;
+  }
+
+  .whyus__text {
+    padding-top: 0;
+    margin-right: 30px;
+    width: 100px;
+  }
+
+  .whyus__title {
+    margin-bottom: 20px;
+
+    font-size: 2rem;
+
+    &::after {
+      margin-left: 15px;
+    }
+  }
+
+  .whyus__title--text {
+    margin-bottom: 30px;
+  }
+
+  .whyus__item {
+    margin-bottom: 30px;
+    padding-left: 65px;
+  }
+
+  .whyus__item--title {
+    font-size: 1.5rem;
+  }
+
+  .whyus__item--text {
+    line-height: 1.5rem;
+  }
+
+  .whyus__tourist {
+    flex-basis: 300px;
+    width: 300px;
+    height: 454px;
+
+    &::before {
+      border-width: 20px;
+      width: 240px;
+      height: 270px;
+    }
+  }
+}
+
+
+@media(max-width: 767px) {
+  .whyus {
+    padding: 20px 0;
+
+    overflow: hidden;
+  }
+
+  .whyus__wrapper {
+    position: relative;
+  }
+
+  .whyus__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .whyus__text {
+    position: relative;
+    flex-basis: 100%;
+    margin: 0;
+
+    z-index: 20;
+  }
+
+  .whyus__title {
+    margin-bottom: 10px;
+
+    font-size: 1.9rem;
+  }
+
+  .whyus__title--text {
+    margin-bottom: 20px;
+  }
+
+  .whyus__item {
+    margin-bottom: 15px;
+  }
+
+  .whyus__item--title {
+    margin-bottom: 10px;
+  }
+
+  .whyus__tourist {
+    position: absolute;
+    top: -10px;
+    right: 0;
+
+    flex-basis: 250px;
+    width: 250px;
+    height: 404px;
+
+    opacity: 0.4;
+    z-index: 10;
+
+    &::before {
+      border-width: 10px;
+
+      width: 210px;
+      height: 240px;
+    }
+  }
+
+  
+
+
+
+
+}
+
+
+
+
+

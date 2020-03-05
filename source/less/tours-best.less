@@ -1,0 +1,146 @@
+@dashed: 1px dashed red;
+@pink: #da284f;
+@lightpink: #da4465;
+@darkpink: #b32645;
+
+
+/*
+body desktop - max-width: 1400px;
+body tablet - max-width: 1199px;
+body mobile - min/max-width: 320px/767px;
+
+content, d/t/m: 85% / 90% / 95%
+*/
+
+
+@media(min-width: 1200px), (max-width: 1400px) {
+  .best {
+    padding: 90px 0;
+    background-color: #ffffff;
+  }
+
+  .best__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .best__item {
+    flex-basis: 32%;
+  }
+
+  .best__title {
+    margin-bottom: 35px;
+
+    font-size: 1.7rem;
+    color: @pink;
+  }
+
+  .best__text {
+    margin-bottom: 25px;
+
+    line-height: 1.7rem;
+    color: #3c3b3b;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .best__text--main {
+    position: relative;
+    margin-bottom: 50px;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4c4c4c;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -25px;
+
+      width: 65px;
+      height: 2px;
+
+      background-color: @pink;
+    }
+  }
+}
+
+
+@media(max-width: 1199px) {
+  .best {
+    padding: 70px 0 50px;
+  }
+
+  .best__title {
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+  }
+
+  .best__text {
+    margin-bottom: 20px;
+
+    line-height: 1.5rem;
+  }
+
+  .best__text--main {
+    margin-bottom: 40px;
+
+    &::after {
+      bottom: -20px;
+    }
+  }
+
+  .best__image--wrapper {
+    align-self: center;
+  }
+}
+
+
+@media(max-width: 767px) {
+  .best {
+    position: relative;
+    padding: 40px 0 0;
+
+    background: url(../img/tours-world-opacity.png) center 25px no-repeat, #ffffff;
+    background-size: contain;
+  }
+
+  .best__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .best__item {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .best__title {
+    margin-bottom: 15px;
+
+    font-size: 1.5rem;
+  }
+
+  .best__text {
+    margin-bottom: 15px;
+    line-height: 1.4rem;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .best__image--wrapper {
+    display: none;
+  }
+
+
+}
+
+
+
+
+

@@ -72,39 +72,148 @@
     </header>
 
     <main class="container">
-      <section class="besttour">
-        <div class="besttour__wrapper section__wrapper">
-          <div class="besttour__text--wrapper">
-            <h2 class="besttour__title">Them Best Great Tourism is Right Here</h2>
-            <p class="besttour__text besttour__text--main">Better Travel Packages like any other</p>
-            <p class="besttour__text">Dummy text ever since the 1500s, when an unknown printer took. A galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. Dummy text ever since the 1500s, when an unknown printer took. A galley of type.</p>
+      <section class="best">
+        <div class="best__wrapper section__wrapper">
+          <div class="best__item best__text--wrapper">
+            <h2 class="best__title">Лучшие услуги туризма у нас</h2>
+            <p class="best__text best__text--main">Better Travel Packages like any other</p>
+            <p class="best__text">Dummy text ever since the 1500s, when an unknown printer took. A galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. Dummy text ever since the 1500s, when an unknown printer took. A galley of type.</p>
           </div>
           
-          <div class="besttour__image--wrapper">
-            <img class="besttour__image" src="img/tours-world.png" alt="Мир" width="350" height="274" title="Мир">
+          <div class="best__item best__image--wrapper">
+            <img class="best__image" src="img/tours-world.png" alt="Мир" width="350" height="274" title="Мир">
           </div>
           
-          <div class="besttour__text--wrapper">
-            <h2 class="besttour__title">Our Awards</h2>
-            <p class="besttour__text besttour__text--main">Dummy text ever since the 1500s, when an unknown printer took. A galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. </p>
-            <p class="besttour__text">Dummy text ever since the 1500s, when an unknown printer took. A galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. </p>
+          <div class="best__item best__text--wrapper">
+            <h2 class="best__title">Наши отличия</h2>
+            <p class="best__text">Dummy text ever since the 1500s, when an unknown printer took. A galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. </p>
+            <p class="best__text">Dummy text ever since the 1500s, when an unknown printer took. A galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. </p>
           </div>
         </div>
       </section>
 
       <section class="whyus">
-        <div class="whyus__wrapper">
-          <div>
-            
+        <div class="whyus__wrapper section__wrapper">
+          <div class="whyus__text">
+            <div class="whyus__title--wrapper">
+              <h3 class="whyus__title">Почему мы?</h3>
+              <p class="whyus__title--text">Мы делаем все процессы простыми</p>
+            </div>
+
+            <ul class="whyus__list">
+              <li class="whyus__item">
+                <h4 class="whyus__item--title">Туры по всему миру</h4>
+                <p class="whyus__item--text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+              </li>
+              <li class="whyus__item">
+                <h4 class="whyus__item--title">Индивидуальные и групповые туры</h4>
+                <p class="whyus__item--text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+              </li>
+              <li class="whyus__item">
+                <h4 class="whyus__item--title">Визовая поддержка</h4>
+                <p class="whyus__item--text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="whyus__tourist">
+            <p class="whyus__image--wrapper">
+              <img class="whyus__image" src="img/tours-girl.png" alt="Турист" title="Турист" width="469" height="623">
+            </p>
           </div>
 
         </div>
       </section>
-      <section></section>
-      <section></section>
 
+      <section class="find">
+        <div class="fint__wrapper section__wrapper">
+          <div class="find__form--wrapper">
+            <h3 class="find__form--title"></h3>
+            <form class="find__form" action="php/form__action.php">
+              <ul class="find__form--list">
+                <li class="find__form--item">
+                  <label class="find__form--label" for="keyword">Ключевое слово?</label><br>
+                  <input id="keyword" class="find__form--input" type="text" name="word" placeholder="Введите ключевое слово" >
+                </li>
+                <li class="find__form--item">
+                  <label class="find__form--label" for="where">Куда?</label><br>
+                  <input id="where" class="find__form--input" type="text" name="place" placeholder="Введите место" >
+                </li>
+                <li class="find__form--item">
+                  <label class="find__form--label" for="start-date">Дата начала</label><br>
+                  <input id="keyword" class="find__form--input" type="text" name="start-date" placeholder="ДД.ММ.ГГГГ" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}">
+                </li>
+              </ul>
+            </form>
+          </div>
 
-      
+          <div class="find__promo--wrapper">
+            <ul class="find__promo--list">
+              <li class="find__promo--item">
+                <div class="promo__item">
+                  <p class="promo__image--wrapper">
+                    <img src="img/tours-Shanghai.jpg" alt="Шанхай" title="Шанхай" width="377" height="254">
+                  </p>
+                  <div class="promo__text--wrapper">
+                    <p class="promo__title">Шанхай</p>
+                    <p class="promo__text">Painting has been the industry's standard dummy text ever since the 1500s, when an...</p>
+                    <p>
+                      <span class="promo__price">&#36; 1 100</span>
+                      <span class="promo__date">14 марта 2020</span>
+                      <span class="promo__term"> 8 дней 7 ночей</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              
+              <li class="find__promo--item">
+                <div class="promo__item">
+                  <p class="promo__image--wrapper">
+                    <img src="img/tours-Vatican.jpg" alt="Шанхай" title="Шанхай" width="386" height="260">
+                  </p>
+                  <div class="promo__text--wrapper">
+                    <p class="promo__title">Ватикан</p>
+                    <p class="promo__text">Painting has been the industry's standard dummy text ever since the 1500s, when an...</p>
+                    <p>
+                      <span class="promo__price">&#36; 700</span>
+                      <span class="promo__date">14 марта 2020</span>
+                      <span class="promo__term"> 5 дней 4 ночи</span>
+                    </p>
+                  </div>
+                </div>
+              </li> 
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="special">
+        <div class="special__wrapper section__wrapper">
+          <h3 class="special__title">Специальное предложение</h3>
+          <ul class="special__list">
+            <li class="special__item">
+              <a class="special__link" href="#">
+                <img class="special__image" src="img/tours-hotel1.jpg" alt="Отель" title="Отель Пушкаш" width="255" height="288">
+              </a>
+            </li>
+            <li class="special__item">
+              <a class="special__link" href="#">
+                <img class="special__image" src="img/tours-hotel2.jpg" alt="Отель" title="Отель Эйсебио" width="255" height="288">
+              </a>
+            </li>
+            <li class="special__item">
+              <a class="special__link" href="#">
+                <img class="special__image" src="img/tours-hotel3.jpg" alt="Отель" title="Отель Кройф" width="255" height="288">
+              </a>
+            </li>
+            <li class="special__item">
+              <a class="special__link" href="#">
+                <img class="special__image" src="img/tours-hotel4.jpg" alt="Отель" title="Отель Барези" width="255" height="288">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     
     <footer class="footer">
