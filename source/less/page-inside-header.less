@@ -15,6 +15,11 @@ content, d/t/m: 85% / 90% / 95%
 
 
 @media(min-width: 1200px), (max-width: 1400px) {
+  .page-inside .inside__header {
+    background: url(../img/bg-about-header1400.jpg) center top no-repeat, #008000;
+    background-size: cover;
+  }
+
   .page-inside .main-nav {
     margin-bottom: 90px;
   }
@@ -82,33 +87,37 @@ content, d/t/m: 85% / 90% / 95%
       color: @pink;
     }
   }
-
-
-  .page-inside .first__section {
-    padding: 90px 0 55px;
-  }
-
-
-
-
-
-
-  
-
 }
 
 
 @media(max-width: 1199px) {
-  .page-inside .first__section {
-    padding: 50px 0;
+
+  .page-inside .main-nav {
+    margin-bottom: 70px;
   }
 
+  .header-inside__title {
+    margin-bottom: 70px;
+
+    &::before {
+      top: -20px;
+    }
+  }
 }
 
 
 @media(max-width: 767px) {
-  .page-inside .first__section {
-    padding: 40px 0 20px;
+  
+  .page-inside .main-nav {
+    margin-bottom: 40px;
+  }
+
+  .header-inside__title {
+    margin-bottom: 40px;
+
+    &::before {
+      top: -10px;
+    }
   }
 
 
