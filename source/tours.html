@@ -128,22 +128,25 @@
       <section class="find">
         <div class="fint__wrapper section__wrapper">
           <div class="find__form--wrapper">
-            <h3 class="find__form--title"></h3>
+            <h3 class="find__form--title">Найди свой тур</h3>
+            
             <form class="find__form" action="php/form__action.php">
               <ul class="find__form--list">
                 <li class="find__form--item">
-                  <label class="find__form--label" for="keyword">Ключевое слово?</label><br>
+                  <label class="find__form--label" for="keyword">Ключевое слово?</label>
                   <input id="keyword" class="find__form--input" type="text" name="word" placeholder="Введите ключевое слово" >
                 </li>
                 <li class="find__form--item">
-                  <label class="find__form--label" for="where">Куда?</label><br>
+                  <label class="find__form--label" for="where">Куда?</label>
                   <input id="where" class="find__form--input" type="text" name="place" placeholder="Введите место" >
                 </li>
                 <li class="find__form--item">
-                  <label class="find__form--label" for="start-date">Дата начала</label><br>
+                  <label class="find__form--label" for="start-date">Дата начала</label>
                   <input id="keyword" class="find__form--input" type="text" name="start-date" placeholder="ДД.ММ.ГГГГ" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}">
                 </li>
               </ul>
+              
+              <button class="find__form--button" type="submit" value="Поиск">Поиск</button>
             </form>
           </div>
 
@@ -152,33 +155,38 @@
               <li class="find__promo--item">
                 <div class="promo__item">
                   <p class="promo__image--wrapper">
-                    <img src="img/tours-Shanghai.jpg" alt="Шанхай" title="Шанхай" width="377" height="254">
+                    <img class="promo__image" src="img/tours-Shanghai.jpg" alt="Шанхай" title="Шанхай" width="377" height="254">
                   </p>
+                  
                   <div class="promo__text--wrapper">
-                    <p class="promo__title">Шанхай</p>
-                    <p class="promo__text">Painting has been the industry's standard dummy text ever since the 1500s, when an...</p>
-                    <p>
-                      <span class="promo__price">&#36; 1 100</span>
-                      <span class="promo__date">14 марта 2020</span>
-                      <span class="promo__term"> 8 дней 7 ночей</span>
-                    </p>
-                  </div>
+                    <a class="promo__text--link" href="#">
+                      <p class="promo__title">Шанхай</p>
+                      <p class="promo__text">Painting has been the industry's standard dummy textever since the 1500s, when an...</p>
+                      <p class="promo__data">
+                        <span class="promo__price">&#36; 1 100</span>
+                        <span class="promo__date">14 марта 2020</span>
+                        <span class="promo__term"> 8 дней 7 ночей</span>
+                      </p>
+                    </a>
+                  </div>  
                 </div>
               </li>
               
               <li class="find__promo--item">
                 <div class="promo__item">
                   <p class="promo__image--wrapper">
-                    <img src="img/tours-Vatican.jpg" alt="Шанхай" title="Шанхай" width="386" height="260">
+                    <img class="promo__image" src="img/tours-Vatican.jpg" alt="Шанхай" title="Шанхай" width="386" height="260">
                   </p>
                   <div class="promo__text--wrapper">
-                    <p class="promo__title">Ватикан</p>
-                    <p class="promo__text">Painting has been the industry's standard dummy text ever since the 1500s, when an...</p>
-                    <p>
-                      <span class="promo__price">&#36; 700</span>
-                      <span class="promo__date">14 марта 2020</span>
-                      <span class="promo__term"> 5 дней 4 ночи</span>
-                    </p>
+                    <a class="promo__text--link" href="#">
+                      <p class="promo__title">Ватикан</p>
+                      <p class="promo__text">Painting has been the industry's standard dummy text ever since the 1500s, when an...</p>
+                      <p class="promo__data">
+                          <span class="promo__price">&#36; 700</span>
+                          <span class="promo__date">14 марта 2020</span>
+                          <span class="promo__term"> 5 дней 4 ночи</span>
+                      </p>
+                    </a>
                   </div>
                 </div>
               </li> 
