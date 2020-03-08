@@ -60,7 +60,6 @@ content, d/t/m: 85% / 90% / 95%
     margin-bottom: 10px;
     
     color: #ffffff;
-    border: @dashed;
   }
 
   .find__form--input {
@@ -151,11 +150,9 @@ content, d/t/m: 85% / 90% / 95%
 
   .promo__image--wrapper {
     width: 100%;
-    border: @dashed;
   }
 
   .promo__text--link {
-    border: @dashed;
     display: block;
     position: relative;
     margin: -40px auto 0;
@@ -224,6 +221,16 @@ content, d/t/m: 85% / 90% / 95%
     color: #53aa13;
     font-weight: 600;
   }
+
+  .promo__price {
+    margin-right: auto;
+  }
+
+  .promo__term {
+    margin-left: auto;
+  }
+
+
 }
 
 
@@ -238,8 +245,11 @@ content, d/t/m: 85% / 90% / 95%
     padding: 30px 20px;
   }
 
-  .find__form--list,
-  .find__form--item  {
+  .find__form--list {
+    margin-bottom: 20px;
+  }
+
+  .find__form--item {
     margin-bottom: 15px;
   }
   
@@ -265,7 +275,7 @@ content, d/t/m: 85% / 90% / 95%
   }
 
   .find__promo--item {
-    flex-basis: 48%
+    flex-basis: 49%
   }
 
   .promo__text--link {
@@ -296,15 +306,68 @@ content, d/t/m: 85% / 90% / 95%
 
   .find__wrapper {
     flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+
+  .find__form--wrapper,
+  .find__promo--wrapper {
+    flex-basis: 80%;
+    margin: 0 auto;
   }
 
   .find__form--wrapper {
-    margin: 0 auto 20px;
+    margin-bottom: 20px;
 
-    display: block;
-    width: 80%;
+    flex-grow: 0;
+    padding: 20px;
+
+    box-sizing: border-box;
   }
 
+  .find__promo--list {
+    flex-wrap: wrap;
+  }
+
+  .find__promo--item {
+    margin: 0 auto 20px;
+    flex-basis: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .find__promo--wrapper,
+  .find__promo--list {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .promo__text--link {
+    &:hover {
+      opacity: 1;
+      transform: scale(1) rotate(0);
+    }
+
+    &:active {
+      opacity: 0.9;
+      transform: scale(1) rotate(0);
+      
+      & .promo__text,
+      & .promo__data {
+        color: #000000;
+      }
+    }
+  }
+
+  .promo__data {
+    padding-bottom: 15px;
+  }
+
+  .promo__text {
+    margin-bottom: 105x;
+    min-height: auto;
+  }
 
 }
 

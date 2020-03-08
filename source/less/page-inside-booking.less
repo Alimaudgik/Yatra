@@ -1,0 +1,72 @@
+@dashed: 1px dashed red;
+@pink: #da284f;
+@lightpink: #da4465;
+@darkpink: #b32645;
+
+
+/*
+body desktop - max-width: 1400px;
+body tablet - max-width: 1199px;
+body mobile - min/max-width: 320px/767px;
+
+content, d/t/m: 85% / 90% / 95%
+*/
+
+
+@media(min-width: 1200px), (max-width: 1400px) {
+  .page-inside .booking {
+    padding: 90px 0;
+  }
+
+  .page-inside .booking__list {
+    top: 0;
+  }
+
+  .page-inside input:checked + label.booking__label {
+    position: relative;
+    box-shadow: 0px 0px 10px 1px rgba(77, 77, 77, 0.58);
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -20px;
+
+      width: calc(100% + 1px);
+      height: 30px;
+
+      background: #ffffff;
+    }
+  }
+
+  .page-inside .flights__form::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 20px;
+
+    background-color: #ffffff;
+    z-index: 10;
+  }
+}
+
+
+@media(max-width: 1199px) {
+  .page-inside .booking {
+    padding: 50px 0;
+  }
+}
+
+
+@media(max-width: 767px) {
+  .page-inside .booking {
+    padding-bottom: 20px;
+  }
+}
+
+
+
+
+

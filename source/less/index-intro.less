@@ -26,20 +26,20 @@
 
 
 @media(min-width: 1200px), (max-width: 1400px) {
-  .prebooking {
+  .booking {
     position: relative;
     padding-bottom: 60px;
 
     background-color: #ffffff;
   }
 
-  .prebooking__wrapper {
+  .booking__wrapper {
     position: relative;
     margin: 0 auto;
     padding: 0;
   }
 
-  .prebooking__list {
+  .booking__list {
     position: relative;
     top: -35px;
     
@@ -50,7 +50,7 @@
     width: 100%;
   }
 
-  .prebooking__item {
+  .booking__item {
     width: 112px;
     height: 35px;
 
@@ -60,7 +60,7 @@
     &:last-child {
       margin-right: 0;
 
-      & label.prebooking__label {
+      & label.booking__label {
         border-right: none;
       }
     }
@@ -69,7 +69,7 @@
       display: none;
     }
 
-    & label.prebooking__label {
+    & label.booking__label {
       position: relative;
       display: block;
       padding-left: 35px;
@@ -107,7 +107,7 @@
       }
     }
 
-    & input:checked + label.prebooking__label {
+    & input:checked + label.booking__label {
       background-color: #ffffff;
       color: @pink;
     }
@@ -130,7 +130,7 @@
     content: '\f21a';
   }
 
-  .prebooking__form {
+  .booking__form {
     display: none;
     
     position: absolute;
@@ -143,16 +143,16 @@
     box-shadow: 0px 0px 11px 1px rgba(77, 77, 77, 0.58);
   }
 
-  .prebooking__item input:checked ~ .prebooking__form {
+  .booking__item input:checked ~ .booking__form {
     display: block;
   }
 
-  .prebooking__formlist {
+  .booking__formlist {
     display: flex;
     justify-content: space-between;
   }
 
-  .prebooking__formitem {
+  .booking__formitem {
     margin-right: 2%;
     width: 100%;
   }
@@ -204,11 +204,11 @@
     width: 44.5%;
   }
 
-  .prebooking__button--wrapper {
+  .booking__button--wrapper {
     display: flex;
     align-items: flex-end;
   }
-  .prebooking__button {
+  .booking__button {
     padding: 10px 0;
     height: 36px;
   }
@@ -323,23 +323,23 @@
 
 
 @media(max-width: 1199px) {
-  .prebooking {
+  .booking {
     padding-bottom: 40px;
   }
 
-  .prebooking__list {
-    margin-bottom: 320px;
+  .booking__list {
+    margin-bottom: 330px;
   }
 
-  .prebooking__form {
+  .booking__form {
     padding-bottom: 20px;
   }
 
-  .prebooking__formlist {
+  .booking__formlist {
     flex-flow: row wrap;
   }
 
-  .prebooking__formitem {
+  .booking__formitem {
     margin-bottom: 20px;
     width: 47%;
 
@@ -373,22 +373,22 @@
 
 
 @media(max-width: 767px) {
-  .prebooking {
+  .booking {
     padding-bottom: 20px;
   }
 
-  .prebooking__list {
-    margin-bottom: 470px;
+  .booking__list {
+    margin-bottom: 480px;
   }
 
-  .prebooking__item {
+  .booking__item {
     width: 25%;
 
     &:last-child {
       width: 25%;
     }
 
-    & label.prebooking__label {
+    & label.booking__label {
       padding-left: 0;
       width: 100%;
 
@@ -400,16 +400,16 @@
     }
   }
 
-  .prebooking__form {
+  .booking__form {
     padding-top: 20px;
     padding-bottom: 0;
   }
 
-  .prebooking__formlist {
+  .booking__formlist {
     flex-direction: column;
   }
 
-  .prebooking__formitem {
+  .booking__formitem {
     width: 100%;
     margin-right: 0;
   }

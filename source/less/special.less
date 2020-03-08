@@ -1,0 +1,163 @@
+@dashed: 1px dashed red;
+@pink: #da284f;
+@lightpink: #da4465;
+@darkpink: #b32645;
+
+
+/*
+body desktop - max-width: 1400px;
+body tablet - max-width: 1199px;
+body mobile - min/max-width: 320px/767px;
+
+content, d/t/m: 85% / 90% / 95%
+*/
+
+
+@media(min-width: 1200px), (max-width: 1400px) {
+  .special {
+    padding-bottom: 85px;
+    background-color: #ffffff
+  }
+
+  .special__title {
+    margin-bottom: 50px;
+
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    color: @pink;
+
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: '';
+      margin-left: 30px;
+      width: 40px;
+      height: 2px;
+      background-color: @pink;
+    }
+  }
+
+  .special__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .special__item {
+    position: relative;
+    flex-basis: 24%;
+
+    overflow: hidden;
+    z-index: 1;
+
+    & .special__image {
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .special__link {
+    position: relative;
+    display: block;
+
+
+      &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      width: 100%;
+      height: 50%;
+
+      background-image: linear-gradient(to top, @pink 15px, transparent);
+      z-index: 10;
+    }
+
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 15px;
+      
+      width: 100%;
+
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-align: center;
+      color: #ffffff;
+
+      z-index: 20;
+    }
+
+    &.hotel1::after {
+      content: 'Отель Эйсебио';
+    }
+
+    &.hotel2::after {
+      content: 'Отель Пушкаш';
+    }
+
+    &.hotel3::after {
+      content: 'Отель Кройф';
+    }
+
+    &.hotel4::after {
+      content: 'Отель Барези';
+    }
+  }
+
+}
+
+
+@media(max-width: 1199px) {
+  .special {
+    padding-bottom: 50px;
+  }
+
+  .special__title {
+    margin-bottom: 30px;
+
+    font-size: 2rem;
+
+    &::after {
+      margin-left: 20px;
+    }
+  }
+
+  .special__link {
+    &::after {
+      bottom: 10px;
+
+      font-size: 1.2rem;
+    }
+  }
+}
+
+
+@media(max-width: 767px) {
+  .special {
+    padding-bottom: 20px;
+  }
+
+  .special__title {
+    margin-bottom: 20px;
+    font-size: 1.9rem;
+  }
+  
+  .special__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .special__item {
+    flex-basis: 45%;
+
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <title>Yatra</title>
+    <title>Бронирование Yatra</title>
 
     <meta charset="UTF-8">
 
@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="css/style.min.css" type="text/css">
     <link rel="stylesheet" href="fonts/FontAwesome/css/all.min.css" type="text/css">
   </head>
-  <body class="main-page">
-    <header class="header">
+  <body class="page-inside">
+    <header class="header inside__header booking__header">
       <div class="header__wrapper section__wrapper">
         <nav class="main-nav">
           <div class="main__logo">
@@ -28,7 +28,7 @@
           </div>
 
           <ul class="main-nav__list">
-            <li class="main-nav__item current">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="index.html" title="Главная">Главная</a>
             </li>
             <li class="main-nav__item">
@@ -37,7 +37,7 @@
             <li class="main-nav__item">
               <a class="main-nav__link" href="tours.html" title="Туры">Туры</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item current">
               <a class="main-nav__link" href="booking.html" title="Бронирование">Бронирование</a>
             </li>
             <li class="main-nav__item">
@@ -47,24 +47,32 @@
               <a class="main-nav__link" href="reviews.html" title="Отзывы">Отзывы</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="contacts.html" title="Контакты">Contact us</a>
+              <a class="main-nav__link" href="contacts.html" title="Контакты">Контакты</a>
             </li>
           </ul>
 
           <button class="menu-open open">Открыть</button>
           <button class="menu-close close">Закрыть</button>
         </nav>
-  
-        <div class="intro">
-          <p class="intro__text welcome">Welcome to</p><br>
-          <p class="intro__text agency">Our Travel Agency</p><br>
-          <p class="intro__text">Lorem Ipsum is simply dummy text of the printing and industry.</p>
+
+        <div class="crumbs__wrapper">
+          <ul class="crumbs__list">
+            <li class="crumbs__item">
+              <a class="crumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="crumbs__item">
+              <a class="crumbs__link current" href="booking.html">Бронирование</a>
+            </li>
+          </ul>
         </div>
+  
+        <h1 class="header-inside__title">Бронирование</h1>
       </div>
       
     </header>
 
     <main class="container">
+      
       <section class="booking">
         <div class="booking__wrapper section__wrapper">
 
@@ -171,7 +179,7 @@
           </ul>
   
           <div class="slogan">
-            <h2 class="slogan__title section__title">Why We Are The Best</h2>
+            <h2 class="slogan__title section__title">Почему стоит работать именно с нами</h2>
             <p class="line"><span class="line-inside"></span></p>
             <p class="slogan__text section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
           </div>
@@ -213,227 +221,83 @@
         </div>
       </section>
 
-      <section class="deals">
-        <div class="deals__wrapper section__wrapper">
-          <h2 class="deals__title section__title">Last minute deals</h2>
-          <p class="line"><span class="line-inside"></span></p>
-          <p class="deals__text section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-          
-          <div class="deals__list--wrapper">
-            <ul class="deals__list">
-            <li class="deals__item deals__item--current">
-              <div class="deals__image">
-                <img class="deals__image--item" src="img/item-1.jpg" alt="Пейзаж 1" width="316" height="210">
-                <p class="deals__price">&#36;5 000.00</p>
-              </div>
+      
+      <section class="join">        
+        <div class="join__wrapper section__wrapper">
+          <div class="slogan">
+            <h2 class="slogan__title join__title section__title">подпишитесь на последние новости</h2>
+            <p class="line join__line"><span class="line-inside"></span></p>
+          </div>
 
-              <div class="deals__stars">
-                <input type="radio" id="i1-excellent" name="low" value="excellent"><label class="stars__label" for="i1-excellent"></label>
-                      
-                <input type="radio" id="i1-normal" name="low" value="normal"><label class="stars__label" for="i1-normal"></label>
-
-                <input type="radio" id="i1-soso" name="low" value="soso"><label class="stars__label" for="i1-soso"></label>
-                                    
-                <input type="radio" id="i1-bad" name="low" value="bad" checked><label class="stars__label" for="i1-bad"></label>
-                                            
-                <input type="radio" id="i1-very-bad" name="low" value="very-bad"><label class="stars__label" for="i1-very-bad"></label>
-              </div>
-              <div class="deals__tour">
-                <h3 class="deals__tour--title lora-font">Paris and Bordeaus</h3>
-                <p class="deals__tour--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                <p class="deals__tour--link"><a class="tour-link" href="#">More details</a></p>
-              </div>
-            </li>
-
-              <li class="deals__item">
-                <div class="deals__image">
-                  <img class="deals__image--item" src="img/item-2.jpg" alt="Пейзаж 2" width="310" height="213">
-                  <p class="deals__price">&#36;7500.00</p>
-                </div>
-
-                <div class="deals__stars">
-                  <input type="radio" id="i2-excellent" name="medium" value="excellent"><label class="stars__label" for="i2-excellent"></label>
-                        
-                  <input type="radio" id="i2-normal" name="medium" value="normal"><label class="stars__label" for="i2-normal"></label>
-
-                  <input type="radio" id="i2-soso" name="medium" value="soso" checked><label class="stars__label" for="i2-soso"></label>
-                                      
-                  <input type="radio" id="i2-bad" name="medium" value="bad"><label class="stars__label" for="i2-bad"></label>
-                                              
-                  <input type="radio" id="i2-very-bad" name="medium" value="very-bad"><label class="stars__label" for="i2-very-bad"></label>
-                </div>
-
-                <div class="deals__tour">
-                  <h3 class="deals__tour--title lora-font">Paris and Bordeaus</h3>
-                  <p class="deals__tour--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                  <p class="deals__tour--link"><a class="tour-link" href="#">More details</a></p>
-                </div>
-              </li>
-
-              <li class="deals__item">
-                <div class="deals__image">
-                  <img class="deals__image--item" src="img/item-3.jpg" alt="Пейзаж 3" width="310" height="211">
-                  <p class="deals__price">&#36;5000.00</p>
-                </div>
-
-                <div class="deals__stars">
-                  <input type="radio" id="i3-excellent" name="high" value="excellent"><label class="stars__label" for="i3-excellent"></label>
-                        
-                  <input type="radio" id="i3-normal" name="high" value="normal" checked><label class="stars__label" for="i3-normal"></label>
-
-                  <input type="radio" id="i3-soso" name="high" value="soso"><label class="stars__label" for="i3-soso"></label>
-                                      
-                  <input type="radio" id="i3-bad" name="high" value="bad"><label class="stars__label" for="i3-bad"></label>
-                                              
-                  <input type="radio" id="i3-very-bad" name="high" value="very-bad"><label class="stars__label" for="i3-very-bad"></label>
-                </div>
-
-                <div class="deals__tour">
-                  <h3 class="deals__tour--title lora-font">Paris and Bordeaus</h3>
-                  <p class="deals__tour--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                  <p class="deals__tour--link"><a class="tour-link" href="#">More details</a></p>
-                </div>
-                
-              </li>
-            </ul>
-            <button class="back" type="button">Back</button>
-            <button class="forward" type="button">Forward</button>
+          <div class="join__form--wrapper">
+            <form class="join__form" action="join-action.php">
+              <input id="join-email" class="join__input" name="join-email" type="text" placeholder="Введите свой почтовый адресс" maxlength="30">
+              <input  id="join-button" class="join__button" name="join__button" type="submit" value="ввод">
+            </form>  
           </div>
         </div>
       </section>
 
-      <section class="services">
-        <div class="services__wrapper section__wrapper">
-          <div class="services__text">
-            <div class="services__text--wrapper">
-              <h2 class="services__text--title lora-font">Lorem ipsum dolor adipiscing elit</h2>
-              <p class="services__text--intro">Lorem Ipsum dummy text</p>
-              <p class="services__text--info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus interdum urna. Phasellus ac lorem ut tellus ornare condimentum. Nulla facilisi. Nulla at facilisis nibh, in ultricies arcu. Fusce elementum mollis eros, vel ultricies enim consequat in.</p>
-            </div>
-            <ul class="services__list">
-              <li class="services__item">
-                <p class="services__item--number lora-font"><span>1</span></p>
-                <h3 class="services__item--title lora-font">Alternative Trips</h3>
-                <p class="services__item--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-              </li>
-              <li class="services__item">
-                <p class="services__item--number lora-font"><span>2</span></p>
-                <h3 class="services__item--title lora-font">Hot Air Ballooning</h3>
-                <p class="services__item--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-              </li>
-              <li class="services__item">
-                <p class="services__item--number lora-font"><span>3</span></p>
-                <h3 class="services__item--title lora-font">Lake Tohoe Advanture</h3>
-                <p class="services__item--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-              </li>
-              <li class="services__item">
-                <p class="services__item--number lora-font"><span>4</span></p>
-                <h3 class="services__item--title lora-font">Lake Tohoe Adventure</h3>
-                <p class="services__item--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-              </li>
-            </ul>
-
-            <p class="services__more"><a class="services__more--link button lora-font" target="_blank" href="services.html" title="all-services">View all services</a></p>
+      <section class="partners">
+        <div class="partners__wrapper section__wrapper">
+          <div class="slogan">
+            <h2 class="partners__title section__title">Наши надежные партнеры</h2>
+            <p class="line"><span class="line-inside"></span></p>
+            <p class="slogan__text section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
           </div>
 
-          <div class="services__view">
-            <ul class="services__view--list services__view--list1">
-              <li class="services__view--item">
-                <p class="services__view--image">
-                  <img src="img/view-1.jpg" alt="Пейзаж" width="301" height="301">
+          <div class="partner__list--wrapper">
+            <ul class="partners__list">
+              <li class="partners__item">
+                <p class="partners__image--wrapper">
+                  <a class="partners__link" href="#" title="Партнер-1">
+                    <img class="partners__image" src="img/logo-airbnb.png" alt="Партнер-1" width="" height="" title="Партнер-1">
+                  </a>
                 </p>
               </li>
-              <li class="services__view--item">
-                <p class="services__view--image">
-                  <img src="img/view-2.jpg" alt="Пейзаж" width="292" height="292">
+              <li class="partners__item">
+                <p class="partners__image--wrapper">
+                  <a class="partners__link" href="#" title="Партнер-2">
+                    <img class="partners__image" src="img/logo-aviasales.png" alt="Партнер-2" width="" height="" title="Партнер-2">
+                  </a>
+                </p>
+              </li>
+              <li class="partners__item">
+                <p class="partners__image--wrapper">
+                  <a class="partners__link" href="#" title="Партнер-3">
+                    <img class="partners__image" src="img/logo-booking.png" alt="Партнер-3" width="" height="" title="Партнер-3">
+                  </a>
+                </p>
+              </li>
+              <li class="partners__item">
+                <p class="partners__image--wrapper">
+                  <a class="partners__link" href="#" title="Партнер-4">
+                    <img class="partners__image" src="img/logo-expedia.png" alt="Партнер-4" width="" height="" title="Партнер-4">
+                  </a>
+                </p>
+              </li>
+              <li class="partners__item">
+                <p class="partners__image--wrapper">
+                  <a class="partners__link" href="#" title="Партнер-5">
+                    <img class="partners__image" src="img/logo-itacademy.svg" alt="Партнер-5" width="" height="" title="Партнер-5">
+                  </a>
+                </p>
+              </li>
+              <li class="partners__item">
+                <p class="partners__image--wrapper">
+                  <a class="partners__link" href="#" title="Партнер-6">
+                    <img class="partners__image logo-juve" src="img/logo-juventus.svg" alt="Партнер-6" width="" height="" title="Партнер-6">
+                  </a>
+                </p>
+              </li>
+              <li class="partners__item">
+                <p class="partners__image--wrapper">
+                  <a class="partners__link" href="#" title="Партнер-7">
+                    <img class="partners__image logo-trip" src="img/logo-tripadvisor.svg" alt="Партнер-7" width="" height="" title="Партнер-7">
+                  </a>
                 </p>
               </li>
             </ul>
-            <ul class="services__view--list services__view--list2">
-              <li class="services__view--item">
-                <p class="services__view--image">
-                  <img src="img/view-3.jpg" alt="Пейзаж" width="293" height="293">
-                </p>
-              </li>
-              <li class="services__view--item">
-                <p class="services__view--image">
-                  <img src="img/view-4.jpg" alt="Пейзаж" width="293" height="293">
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="popular">
-        <div class="popular__wrapper section__wrapper"> 
-          <h2 class="popular__title section__title">MOST POPULAR TOURS</h2>
-          <p class="line"><span class="line-inside"></span></p>
-          <p class="popular__text section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-
-          <ul class="popular__list">
-            <li class="popular__item">
-              <p class="popular__image">
-                <img src="img/tours-1.jpg" alt="Популярный тур" width="355" height="237">
-              </p>
-              <h3 class="popular__tour--title lora-font">Hot Air Ballooning</h3>
-              <p class="popular__tour--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta fringilla ullamcorper. Morbi felis orci, lacinia a velit et, sodales...</p>
-              <p class="popular__tour--more"><a class="popular__tour--link" href="#" title="Learn more" target="_blank">Learn more</a></p>
-            </li>
-
-            <li class="popular__item">
-              <p class="popular__image">
-                <img src="img/tours-2.jpg" alt="Популярный тур" width="353" height="236">
-              </p>
-              <h3 class="popular__tour--title lora-font">Paragliding</h3>
-              <p class="popular__tour--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta fringilla ullamcorper. Morbi felis orci, lacinia a velit et, sodales...</p>
-              <p class="popular__tour--more"><a class="popular__tour--link" href="#" title="Learn more" target="_blank">Learn more</a></p>
-            </li>
-
-            <li class="popular__item">
-              <p class="popular__image">
-                <img src="img/tours-3.jpg" alt="Популярный тур" width="352" height="235">
-              </p>
-              <h3 class="popular__tour--title lora-font">Niagara falls</h3>
-              <p class="popular__tour--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta fringilla ullamcorper. Morbi felis orci, lacinia a velit et, sodales...</p>
-              <p class="popular__tour--more"><a class="popular__tour--link" href="#" title="Learn more" target="_blank">Learn more</a></p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="clients">
-        <div class="clients__wrapper section__wrapper">
-          <h2 class="clients__title section__title">Our happy clients</h2>
-          <p class="line"><span class="line-inside"></span></p>
-          <p class="popular__text section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-
-          <div class="happy-clients__list--wrapper">
-            <ul class="happy-clients__list">
-              <li class="happy-clients__item clients__current">
-                <div class="happy-clients__data">
-                  <p class="happy-clients__quote"></p>
-                  <h3 class="happy-clients__name lora-font">Jordani Jovanovich</h3>
-                  <p class="happy-clients__job">Traveler Head</p>
-                  <p class="happy-clients__text">Lorem Ipsum is simply dummy text of the printing and typesetting when an unknown printer took a galley  industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>  
-                </div>
-                <div class="happy-clients__image client-1"></div>
-              </li>
-              
-              <li class="happy-clients__item">
-                <div class="happy-clients__data">
-                  <p class="happy-clients__quote"></p>
-                  <h3 class="happy-clients__name lora-font">Joaquina Lewandowski</h3>
-                  <p class="happy-clients__job">Traveler Head</p>
-                  <p class="happy-clients__text">Lorem Ipsum is simply dummy text of the printing and 
-                    typesetting when an unknown printer took a galley  industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>  
-                </div>
-                <div class="happy-clients__image client-2"></div>
-              </li>
-            </ul>
-            
-            <buttton type="submit" class="clients-button clients__back">Назад</buttton>
-            <buttton type="submit" class="clients-button clients__forward">Вперед</buttton>
           </div>
         </div>
       </section>
