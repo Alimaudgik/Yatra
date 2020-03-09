@@ -73,17 +73,159 @@
 
     <main class="container">
       
-      <section class="reviews">
-        <div class="reviews__wrapper section__wrapper">
+      <section class="contacts">
+        <div class="contacts__wrapper section__wrapper">
           <div class="slogan">
             <h2 class="slogan__title section__title">Свяжитесь с нами</h2>
             <p class="line"><span class="line-inside"></span></p>
             <p class="slogan__text section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
           </div>
 
+          <div class="contacts__list--wrapper">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <div class="contacts__item--wrapper">
+                  <p class="contacts__logo"><i class="fas fa-phone"></i></p>
+                  <p class="contacts__title">Телефон</p>
+                  <p class="contacts__value">&plus;375 29 123-45-67</p>
+                </div>
+              </li>
+              
+              <li class="contacts__item">
+                <div class="contacts__item--wrapper">
+                  <p class="contacts__logo"><i class="fas fa-map-marker-alt"></i></p>
+                  <p class="contacts__title">Адрес</p>
+                  <p class="contacts__value">г. Минск, ул. Скрыганова, 14</p>
+                </div>
+              </li>
+              
+              <li class="contacts__item">
+                <div class="contacts__item--wrapper">
+                  <p class="contacts__logo"><i class="far fa-clock"></i></p>
+                  <p class="contacts__title">Время работы</p>
+                  <p class="contacts__value">
+                    Пн &ndash; Вт: 08:00 &ndash; 20:00 <br>
+                    Сб &ndash; Вкср: 10:00 &ndash; 16:00
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
+      <section class="contact-form">
+        <div class="contact-form__wrapper section__wrapper">
+          <div class="contact-form__title">
+            <h3>Свяжитесь с нами</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>    
+          </div>
+
+          <div class="contact-form__wrapper">
+            <form class="contact-form__wrapper" action="contact__action.php">
+              <label for="contact-name">
+                <input type="text" id="contact-name" name="contact-name" class="contact-name" placeholder="Имя">
+              </label>
+              
+              <label for="contact-name">
+                <input type="text" id="contact-phone" name="contact-phone" class="contact-phone" placeholder="Телфон">
+              </label>
+              
+              <label for="contact-mail">
+                <input type="text" id="contact-mail" name="contact-mail" class="contact-mail" placeholder="E-mail">
+              </label>
+              
+              <input type="textarea" id="contact-text" name="contact-name" class="contact-text" placeholder="Немного слов о себе">
+              
+              <input type="submit" id="contact-button" class="contact-button" value="Отправить">
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="guides">
+        <div class="guides__wrapper section__wrapper">
+          <div class="slogan">
+            <h2 class="slogan__title section__title">Наши менеджеры</h2>
+            <p class="line"><span class="line-inside"></span></p>
+            <p class="slogan__text section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+          </div>
+
+          <ul class="guides__list">
+            <li class="guides__item">
+              <div class="guides__item--wrapper">
+                <p class="guides__image--wrapper">
+                  <img src="img/contacts-item1.jpg" alt="Менеджер1" title="Менеджер Yatra" width="350" height="250">
+                </p>
+                <div class="guides__info--wrapper">
+                  <div class="guides__info">
+                    <p class="guides__name">Василий Уткин</p>
+                    <p class="guides__pos">Главный по Америке и Африке</p>
+                  </div>
+                  <div class="guides__contacts">
+                    <button class="guides__contacts--button">Инфо</button>
+                    <div>
+                      <p class="guides__contacts--info">
+                        &plus;375 29 123&ndash;54&ndash;67 <br>
+                        vasilii.utkin&#64;yatra.com
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            <li class="guides__item">
+              <div class="guides__item--wrapper">
+                <p class="guides__image--wrapper">
+                  <img src="img/contacts-item2.jpg" alt="Менеджер2" title="Менеджер Yatra" width="350" height="250">
+                </p>
+                <div class="guides__info--wrapper">
+                  <div class="guides__info">
+                    <p class="guides__name">Жани Мескузи</p>
+                    <p class="guides__pos">Главная по Азии и Австралии</p>
+                  </div>
+                  <div class="guides__contacts">
+                    <button class="guides__contacts--button">Инфо</button>
+                    <div>
+                      <p class="guides__contacts--info">
+                        &plus;375 29 123&ndash;54&ndash;67 <br>
+                        zhani.meskuzi&#64;yatra.com
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            <li class="guides__item">
+              <div class="guides__item--wrapper">
+                <p class="guides__image--wrapper">
+                  <img src="img/contacts-item3.jpg" alt="Менеджер3" title="Менеджер Yatra" width="350" height="250">
+                </p>
+                <div class="guides__info--wrapper">
+                  <div class="guides__info">
+                    <p class="guides__name">Елена Кравиц</p>
+                    <p class="guides__pos">Главная по Европе</p>
+                  </div>
+                  <div class="guides__contacts">
+                    <button class="guides__contacts--button">Инфо</button>
+                    <div>
+                      <p class="guides__contacts--info">
+                        &plus;375 29 123&ndash;54&ndash;67 <br>
+                        elena.kravic&#64;yatra.com
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
     </main>
     
     <footer class="footer">
