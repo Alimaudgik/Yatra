@@ -30,8 +30,6 @@ content, d/t/m: 85% / 90% / 95%
   .guides__item {
     width: 32%;
     border-radius: 20px;
-    overflow: hidden;
-    border: @dashed;
 
   }
 
@@ -39,16 +37,112 @@ content, d/t/m: 85% / 90% / 95%
     overflow: hidden;
     border-radius: 20px;
     height: 250px;
-    border: @dashed;
 
     display: flex;
     justify-content: center;
 
     & .guides__image {
-      height: 250px;
+      height: 120%;
       width: auto;
     }
   }
+
+  .guides__info--wrapper {
+    position: relative;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    background-color: rgba(32, 74, 231, 0.5);
+    border-radius: 20px;
+  }
+
+  .guides__info {
+    margin-top: -10px;
+    padding: 20px;
+
+    color: #ffffff;
+
+    background-color: @pink;
+    border-radius: 20px;
+  }
+
+  .guides__name {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .guides__pos {
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+  }
+
+  .guides__contacts {
+    /*position: absolute;*/
+    z-index: 200;
+  }
+
+  .guides__contacts--button {
+    position: absolute;
+    left: 30px;
+    bottom: -13px;
+    width: 48px;
+    height: 48px;
+    font-size: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    z-index: 20;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: calc(50% - 9px);
+      top: calc(50% - 8px);
+      width: 10px;
+      height: 10px;
+      border-top: 3px solid @pink;
+      border-right: 3px solid @pink;
+      transform: rotate(45deg);
+    }
+
+    &:hover {
+      background-color: #e4e4e4;
+    }
+
+    &:active {
+      background-color: @pink;
+      border: 2px solid #ffffff;
+
+      &::before {
+        border-color: #ffffff;
+      }
+    }
+  }
+
+  .guides__contacts--info {
+    display: ;
+    position: absolute;
+    left: 10px;
+    bottom: -13px;
+
+    padding: 0 20px;
+    width: 200px;
+    height: 48px;
+
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #000000;
+    
+    background-color: #ffffff;
+    border-radius: 10px;
+    
+    box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.25);
+
+    z-index: 10;
+  }
+
 }
 
 
