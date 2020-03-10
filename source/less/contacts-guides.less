@@ -1,0 +1,74 @@
+@dashed: 1px dashed red;
+@pink: #da284f;
+@lightpink: #da4465;
+@darkpink: #b32645;
+
+
+/*
+body desktop - max-width: 1400px;
+body tablet - max-width: 1199px;
+body mobile - min/max-width: 320px/767px;
+
+content, d/t/m: 85% / 90% / 95%
+*/
+
+
+@media(min-width: 1200px), (max-width: 1400px) {
+  .guides {
+    background-color: #ffffff;
+  }
+
+  .guides__wrapper {
+    padding: 70px 0 90px;
+  }
+
+  .guides__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .guides__item {
+    width: 32%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: @dashed;
+
+  }
+
+  .guides__image--wrapper {
+    overflow: hidden;
+    border-radius: 20px;
+    height: 250px;
+    border: @dashed;
+
+    display: flex;
+    justify-content: center;
+
+    & .guides__image {
+      height: 250px;
+      width: auto;
+    }
+  }
+}
+
+
+
+@media(max-width: 1199px) {
+  .guides__wrapper {
+    padding: 50px 0;
+  }
+}
+
+
+@media(max-width: 767px) {
+  .guides__wrapper {
+    padding: 30px 0;
+  }
+
+
+}
+
+
+
+
+

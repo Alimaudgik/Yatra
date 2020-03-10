@@ -116,28 +116,40 @@
 
       <section class="contact-form">
         <div class="contact-form__wrapper section__wrapper">
-          <div class="contact-form__title">
-            <h3>Свяжитесь с нами</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>    
+          <div class="contact-form__title--wrapper">
+            <h3 class="contact-form__title">Свяжитесь с нами</h3>
+            <p class="contact-form__title--text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>    
           </div>
 
-          <div class="contact-form__wrapper">
-            <form class="contact-form__wrapper" action="contact__action.php">
-              <label for="contact-name">
-                <input type="text" id="contact-name" name="contact-name" class="contact-name" placeholder="Имя">
-              </label>
-              
-              <label for="contact-name">
-                <input type="text" id="contact-phone" name="contact-phone" class="contact-phone" placeholder="Телфон">
-              </label>
-              
-              <label for="contact-mail">
-                <input type="text" id="contact-mail" name="contact-mail" class="contact-mail" placeholder="E-mail">
-              </label>
-              
-              <input type="textarea" id="contact-text" name="contact-name" class="contact-text" placeholder="Немного слов о себе">
-              
-              <input type="submit" id="contact-button" class="contact-button" value="Отправить">
+          <div class="contact__user-form--wrapper">
+            <form class="contact__user-form" action="contact__action.php">
+              <ul class="contact__user-form--list">
+                <li class="contact__user-form--item">
+                  <label class="contact__user--label" for="contact-name">
+                    <input type="text" id="contact-name" name="contact-name" class="contact-name" placeholder="Имя">
+                  </label>
+                </li>
+
+                <li class="contact__user-form--item">
+                  <label class="contact__user--label" for="contact-phone">
+                    <input type="text" id="contact-phone" name="contact-phone" class="contact-phone" placeholder="Телефон">
+                  </label>
+                </li>
+
+                <li class="contact__user-form--item">
+                  <label class="contact__user--label" for="contact-mail">
+                    <input type="text" id="contact-mail" name="contact-mail" class="contact-mail" placeholder="E-mail">
+                  </label>
+                </li>
+
+                <li class="contact__user-form--item">
+                  <textarea class="contact-text" name="contact-text" id="contact-text" cols="30" rows="10" placeholder="Расскажите немного о себе"></textarea>
+                </li>
+
+                <li class="contact__user-form--item">
+                  <input class="contact-form__item" type="submit" id="contact-button" class="contact-button" value="Отправить">
+                </li>
+              </ul>
             </form>
           </div>
         </div>
@@ -155,12 +167,12 @@
             <li class="guides__item">
               <div class="guides__item--wrapper">
                 <p class="guides__image--wrapper">
-                  <img src="img/contacts-item1.jpg" alt="Менеджер1" title="Менеджер Yatra" width="350" height="250">
+                  <img class="guides__image" src="img/contacts-item1.jpg" alt="Менеджер1" title="Менеджер Yatra" width="350" height="250">
                 </p>
                 <div class="guides__info--wrapper">
                   <div class="guides__info">
-                    <p class="guides__name">Василий Уткин</p>
-                    <p class="guides__pos">Главный по Америке и Африке</p>
+                    <p class="guides__name">Василий и Марина Уткины</p>
+                    <p class="guides__pos">Главные по Америке и Африке</p>
                   </div>
                   <div class="guides__contacts">
                     <button class="guides__contacts--button">Инфо</button>
@@ -178,7 +190,7 @@
             <li class="guides__item">
               <div class="guides__item--wrapper">
                 <p class="guides__image--wrapper">
-                  <img src="img/contacts-item2.jpg" alt="Менеджер2" title="Менеджер Yatra" width="350" height="250">
+                  <img class="guides__image" src="img/contacts-item2.jpg" alt="Менеджер2" title="Менеджер Yatra" width="350" height="250">
                 </p>
                 <div class="guides__info--wrapper">
                   <div class="guides__info">
@@ -201,7 +213,7 @@
             <li class="guides__item">
               <div class="guides__item--wrapper">
                 <p class="guides__image--wrapper">
-                  <img src="img/contacts-item3.jpg" alt="Менеджер3" title="Менеджер Yatra" width="350" height="250">
+                  <img class="guides__image" src="img/contacts-item3.jpg" alt="Менеджер3" title="Менеджер Yatra" width="350" height="250">
                 </p>
                 <div class="guides__info--wrapper">
                   <div class="guides__info">
