@@ -1,14 +1,13 @@
 @dashed: 1px dashed red;
 @pink: #da284f;
 
-
-/*
-body desktop - max-width: 1400px;
-body tablet - max-width: 1199px;
-body mobile - min/max-width: 320px/767px;
-content: 85%
-*/
-
+@keyframes menu {
+  from  {height: 0;}
+  to    {
+    height: 266px;
+    display: flex;
+  }
+};
 
 @media(min-width: 1200px), (max-width: 1400px) {
   .header {
@@ -206,13 +205,25 @@ content: 85%
   .main-nav__list {
     margin: 0 auto;
 
-    display: block;
+    overflow: hidden;
+
+    display: none;
     flex-direction: column;
     width: 150px;
 
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
   }
+
+  .menu__open {
+    display: flex;
+    animation: menu 1s 1 ease-in-out;
+  }
+  
+  .menu__close {
+    display: none;
+  }
+
 
   .main-nav__item {
     margin: 0;
@@ -241,6 +252,7 @@ content: 85%
   }
 
   .intro__text {
+    position: relative;
     font-size: 1.2rem;
     text-align: center;
 
@@ -319,5 +331,13 @@ content: 85%
     &::after {
       transform: rotate(-45deg);
     }
+  }
+
+  .btn-on {
+    display: block;
+  }
+
+  .btn-off {
+    display: none;
   }
 }
