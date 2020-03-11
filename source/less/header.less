@@ -4,7 +4,7 @@
 @keyframes menu {
   from  {height: 0;}
   to    {
-    height: 266px;
+    height: 271px;
     display: flex;
   }
 };
@@ -204,12 +204,15 @@
 
   .main-nav__list {
     margin: 0 auto;
+    padding-top: 5px;
+
 
     overflow: hidden;
 
     display: none;
     flex-direction: column;
     width: 150px;
+    height: 266px;
 
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
@@ -217,7 +220,7 @@
 
   .menu__open {
     display: flex;
-    animation: menu 1s 1 ease-in-out;
+    animation: menu 1s 1 linear;
   }
   
   .menu__close {
