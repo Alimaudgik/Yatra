@@ -157,8 +157,8 @@ content, d/t/m: 85% / 90% / 95%
 
   @keyframes map {
     0% {top: -600px;}
-    35% {top: 50px;}
-    50% {top: -50px}
+    35% {top: 100px;}
+    50% {top: -100px}
     100% {top: 30px}
   }
 
@@ -178,6 +178,11 @@ content, d/t/m: 85% / 90% / 95%
     }
   }
 
+  input {
+    position: relative;
+    z-index: 100;
+  }
+
   .location__on {
     display: block;
     animation: map 2s ease-out 1;
@@ -185,6 +190,7 @@ content, d/t/m: 85% / 90% / 95%
 
   .location__off {
     display: none;
+    top: -600px;
   }
 
   .location__btn--off {
