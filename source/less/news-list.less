@@ -117,6 +117,17 @@ content, d/t/m: 85% / 90% / 95%
     font-weight: 600;
     line-height: 2.1rem;
     color: #000000;
+
+    &:hover::after {
+      opacity: 1;
+      color: @pink;
+    }
+
+    &::after {
+      content: '>>>';
+      margin-left: 5px;
+      color: #a0a0a0;
+    }
   }
 }
 

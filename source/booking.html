@@ -27,7 +27,7 @@
             </a>
           </div>
 
-          <ul class="main-nav__list">
+          <ul class="main-nav__list menu__close">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html" title="Главная">Главная</a>
             </li>
@@ -51,8 +51,8 @@
             </li>
           </ul>
 
-          <button class="menu-open open">Открыть</button>
-          <button class="menu-close close">Закрыть</button>
+          <button class="menu-btn btn-on open">Открыть</button>
+          <button class="menu-btn btn-off close">Закрыть</button>
         </nav>
 
         <div class="crumbs__wrapper">
@@ -78,13 +78,13 @@
 
           <ul class="booking__list">
             <li class="booking__item">
-              <input id="flights" name="booking" value="flights" type="radio" checked><label class="booking__label flights" for="flights">Flights</label>
+              <input id="flights" name="booking" value="flights" type="radio" checked><label class="booking__label flights" for="flights">Полеты</label>
               <form class="booking__form flights__form" action="flights.php">
                 <ul class="flights__formlist booking__formlist">
                   <li class="flights__item booking__formitem">
-                    <label for="flights__from" class="flights__item--title formlist__title">Flying from:</label>
+                    <label for="flights__from" class="flights__item--title formlist__title">Откуда:</label>
                     <select class="flights__item--input" name="flights__from" id="flights__from">
-                      <option value="placeholder-from" disabled selected hidden>City of Airport</option>
+                      <option value="placeholder-from" disabled selected hidden>Город вылета</option>
                       <option value="Minsk">Минск</option>
                       <option value="Moscow">Москва</option>
                       <option value="Kiev">Киев</option>
@@ -94,9 +94,9 @@
                     </select>
                   </li>
                   <li class="flights__item booking__formitem">
-                    <label for="flights__to" class="flights__item--title formlist__title">To:</label>
+                    <label for="flights__to" class="flights__item--title formlist__title">Куда:</label>
                     <select class="flights__item--input" name="flights__to" id="flights__to">
-                      <option value="placeholder-to" disabled selected hidden>City of Airport</option>
+                      <option value="placeholder-to" disabled selected hidden>Город прилета</option>
                       <option value="Minsk">Минск</option>
                       <option value="Moscow">Москва</option>
                       <option value="Kiev">Киев</option>
@@ -106,16 +106,16 @@
                     </select>
                   </li>
                   <li class="flights__item booking__formitem">
-                    <label for="departing" class="flights__item--title formlist__title">Departing:</label>
-                    <input id="departing" class="date" type="text" name="departing" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}">
+                    <label for="departing" class="flights__item--title formlist__title">Дата туда:</label>
+                    <input id="departing" class="date" type="text" name="departing" maxlength="10" placeholder="ДД.ММ.ГГГГ" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}">
                   </li>
                   <li class="flights__item booking__formitem">
-                    <label for="returning" class="flights__item--title formlist__title">Returning:</label>
-                    <input id="returning" class="date" type="text" name="returning" maxlength="10" placeholder="MM.DD.YYYY" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}">
+                    <label for="returning" class="flights__item--title formlist__title">Дата обратно:</label>
+                    <input id="returning" class="date" type="text" name="returning" maxlength="10" placeholder="ДД.ММ.ГГГГ" pattern="[0-9]{1,2}[.][0-9]{1,2}[.][0-9]{4}">
                   </li>
                   <li class="flights__item booking__formitem people-item">
                     <div class="adult">
-                      <label for="adult" class="flights__item--title formlist__title">Adult:</label>
+                      <label for="adult" class="flights__item--title formlist__title">Взрослые:</label>
                       <select class="flights__item--input people-number" name="adult" id="adult">
                         <option value="one" selected>1</option>
                         <option value="two">2</option>
@@ -132,7 +132,7 @@
                       </select>
                     </div>
                     <div class="child">
-                      <label for="child" class="flights__item--title formlist__title">Child:</label>
+                      <label for="child" class="flights__item--title formlist__title">Дети:</label>
                       <select class="flights__item--input people-number" name="child" id="child">
                         <option value="one" selected>1</option>
                         <option value="two">2</option>
@@ -150,28 +150,28 @@
                     </div>
                   </li>
                   <li class="booking__formitem booking__button--wrapper">
-                    <input class="booking__button button" type="submit" value="Search here">
+                    <input class="booking__button button" type="submit" value="Поиск">
                   </li>
                 </ul>
               </form>
             </li>
 
             <li class="booking__item">
-              <input id="hotels" name="booking" value="hotels" type="radio"><label class="booking__label hotels" for="hotels">Hotels</label>
+              <input id="hotels" name="booking" value="hotels" type="radio"><label class="booking__label hotels" for="hotels">Отели</label>
               <form class="form-none booking__form flights__form" action="hotels.php">
                 
               </form>
             </li>
 
             <li class="booking__item">
-              <input id="cars" name="booking" value="cars" type="radio"><label class="booking__label cars" for="cars">Cars</label>
+              <input id="cars" name="booking" value="cars" type="radio"><label class="booking__label cars" for="cars">Авто</label>
               <form class="form-none booking__form flights__form" action="cars.php">
                 
               </form>
             </li>
 
             <li class="booking__item">
-              <input id="cruises" name="booking" value="cruises" type="radio"><label class="booking__label cruises" for="cruises">Cruises</label>
+              <input id="cruises" name="booking" value="cruises" type="radio"><label class="booking__label cruises" for="cruises">Круизы</label>
               <form class="form-none booking__form flights__form" action="cruises.php">
                 
               </form>
@@ -179,42 +179,38 @@
           </ul>
   
           <div class="slogan">
-            <h2 class="slogan__title section__title">Почему стоит работать именно с нами</h2>
+            <h2 class="slogan__title section__title">Мы лучшие</h2>
             <p class="line"><span class="line-inside"></span></p>
-            <p class="slogan__text section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p class="slogan__text section__text">Благодаря тому, что мы продаем только проверенные туры, а не все подряд, Yatra сохраняет безупречную репутацию. Наша главная задача &ndash; сделать Ваш отдых идеальным и незабываемым.</p>
           </div>
   
           <ul class="benefits__list">
             <li class="benefits__item">
               <div class="benefits__item--wrapper">
-                <h3 class="benefits__item--title">Amazing Travel</h3>
+                <h3 class="benefits__item--title">Яркие путешествия</h3>
                 <p class="benefits__item--image amazin-travel"></p>
-                <p class="benefits__item--text">Nam liber tempor cum soluta nobis 
-                  eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                <p class="benefits__item--text">Эксклюзивные туры Yatra являются уникальным продуктом и не имеет аналогов на рынке туристических услуг.</p>
               </div>
             </li>
             <li class="benefits__item">
               <div class="benefits__item--wrapper">
-                <h3 class="benefits__item--title">Discover</h3>
+                <h3 class="benefits__item--title">Новые открытия</h3>
                 <p class="benefits__item--image discover"></p>
-                <p class="benefits__item--text">Nam liber tempor cum soluta nobis 
-                  eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                <p class="benefits__item--text">В случае если необходимый продукт отсутствует на рынке, мы можем разработать незабываемый туристический модуль самостоятельно.</p>
               </div>
             </li>
             <li class="benefits__item">
               <div class="benefits__item--wrapper">
-                <h3 class="benefits__item--title">Book your trip</h3>
+                <h3 class="benefits__item--title">Четкое планирование</h3>
                 <p class="benefits__item--image book"></p>
-                <p class="benefits__item--text">Nam liber tempor cum soluta nobis 
-                  eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                <p class="benefits__item--text">Мы знаем, кому из операторов можно доверять и из принципа не работаем с сомнительными компаниями ради собственной выгоды.</p>
               </div>
             </li>
             <li class="benefits__item">
               <div class="benefits__item--wrapper">
-                <h3 class="benefits__item--title">Nice support</h3>
+                <h3 class="benefits__item--title">Отличная поддержка</h3>
                 <p class="benefits__item--image support"></p>
-                <p class="benefits__item--text">Nam liber tempor cum soluta nobis 
-                  eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                <p class="benefits__item--text">Помощь в выборе страны, периода для отдыха, любые консультации, страховая и визовая поддержка оказываются бесплатно еще на этапе подбора тура до его покупки.</p>
               </div>
             </li>
           </ul>
@@ -243,7 +239,7 @@
           <div class="slogan">
             <h2 class="partners__title section__title">Наши надежные партнеры</h2>
             <p class="line"><span class="line-inside"></span></p>
-            <p class="slogan__text section__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p class="slogan__text section__text">Мы доверяем. Нам доверяют. Отношения с партнерами строятся на долгосрочной взаимовыгодной основе. Именно поэтому все партнеры компании являются ее верными друзьями.</p>
           </div>
 
           <div class="partner__list--wrapper">
@@ -387,7 +383,7 @@
           </div>
         </div>
 
-        <p class="footer__copyright lato-font">© 2020. Все права защищены</p>
+        <p class="footer__copyright lato-font">© Yatra, 2020. Все права защищены</p>
 
       </div>
 
