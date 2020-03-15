@@ -123,7 +123,6 @@ content, d/t/m: 85% / 90% / 95%
     margin: 0 auto;
     margin-bottom: 25px;
     display: flex;
-    flex-flow: row-reverse nowrap;
     justify-content: center;
 
     & input {
@@ -137,7 +136,6 @@ content, d/t/m: 85% / 90% / 95%
     width: 15px;
     height: 15px;
     display: inline-block;
-    cursor: pointer;
     
     &::before {
       content: '\f005';
@@ -145,16 +143,16 @@ content, d/t/m: 85% / 90% / 95%
       display: block;
       font-size: 15px;
       color: #ffc63f;
+      font-weight: bold;
+    }
+
+    &.current ~ .stars__label::before {
+      font-weight: normal;
     }
 
     &:first-child {
       margin-right: 0;
     }
-  }
-
-  input[type=radio]:checked + .stars__label,
-  input[type=radio]:checked + .stars__label ~ .stars__label {
-    font-weight: bold;
   }
 
   .deals__tour--title {
@@ -413,11 +411,6 @@ content, d/t/m: 85% / 90% / 95%
   .forward {
     right: 0;
   }
-
-
-  
-
-
 }
 
 
